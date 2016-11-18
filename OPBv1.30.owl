@@ -3305,14 +3305,14 @@ amount of particles in a portion of particles.</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00085"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00373"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00371"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00085"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00371"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00373"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4321,13 +4321,13 @@ Clearly, no physical event is truly discrete as that implies a change of physica
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_00435"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_00195"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_00195"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_00435"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <OPB_00072>compound</OPB_00072>
@@ -4426,6 +4426,7 @@ Clearly, no physical event is truly discrete as that implies a change of physica
     <owl:Class rdf:about="&OPB;OPB_01077">
         <rdfs:label xml:lang="en">Bounded line region</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01243"/>
+        <rdfs:comment>A one-dimensional region that has a finite spatial extent limited by a spatial boundary</rdfs:comment>
     </owl:Class>
     
 
@@ -4753,9 +4754,18 @@ Clearly, no physical event is truly discrete as that implies a change of physica
     <owl:Class rdf:about="&OPB;OPB_01107">
         <rdfs:label>Material amount</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_00135"/>
+        <OPB_00072>inertia</OPB_00072>
         <rdfs:comment>An amount property that is the mass of matter that inhers in a material dynamical entity</rdfs:comment>
+        <OPB_00072>mass</OPB_00072>
         <discussion>synonyms: mass, inertia, inertial mass</discussion>
         <OPB_01068>PATO:0000125</OPB_01068>
+        <OPB_00103>https://en.wikipedia.org/wiki/Inertia
+
+No physical difference has been found between gravitational and inertial mass in a given inertial frame.
+
+Inertial mass is found by applying a known net force to an unknown mass, measuring the resulting acceleration, and applying Newton&apos;s Second Law, m = F/a. 
+
+Gravitational mass is measured by comparing the force of gravity of an unknown mass to the force of gravity of a known mass.</OPB_00103>
     </owl:Class>
     
 
@@ -4777,13 +4787,13 @@ Clearly, no physical event is truly discrete as that implies a change of physica
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_00435"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_00017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_00017"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_00435"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A portion of material that is comprised of an uncountably large set of particles that have diffusion kinetic properties and participate in diffusion processes.</rdfs:comment>
@@ -5574,6 +5584,7 @@ A physics model entity that consists of a collection of physics attributes or co
     <owl:Class rdf:about="&OPB;OPB_01188">
         <rdfs:label xml:lang="en">Spatial entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01118"/>
+        <discussion>Full implementation of Spatial entity classes will be &quot;out sourced&quot; to existing spatial representations in BFO</discussion>
     </owl:Class>
     
 
@@ -5829,7 +5840,7 @@ A physics model entity that consists of a collection of physics attributes or co
     <owl:Class rdf:about="&OPB;OPB_01210">
         <rdfs:label xml:lang="en">Spatial region</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01188"/>
-        <rdfs:comment>A geometrical entity that is a bounded, contiguous portion of space</rdfs:comment>
+        <rdfs:comment>A spatial entity that is a spatially bound, contiguous portion of space</rdfs:comment>
         <discussion>Spatial regions are spatial entities as found in BFO, GFO, etc. and, as such, are generic entities that can apply to any line, surface, or volume. The problem is that such non-specificity minimizes their utility for model specification and annotation. </discussion>
     </owl:Class>
     
@@ -5840,6 +5851,7 @@ A physics model entity that consists of a collection of physics attributes or co
     <owl:Class rdf:about="&OPB;OPB_01211">
         <rdfs:label xml:lang="en">Three-dimensional region</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01210"/>
+        <rdfs:comment>A spatial region that has three spatial dimensions.</rdfs:comment>
     </owl:Class>
     
 
@@ -6176,6 +6188,7 @@ A physics model entity that consists of a collection of physics attributes or co
     <owl:Class rdf:about="&OPB;OPB_01242">
         <rdfs:label xml:lang="en">Two-dimensional region</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01210"/>
+        <rdfs:comment>A spatial region that has two spatial dimensions.</rdfs:comment>
     </owl:Class>
     
 
@@ -6185,6 +6198,7 @@ A physics model entity that consists of a collection of physics attributes or co
     <owl:Class rdf:about="&OPB;OPB_01243">
         <rdfs:label xml:lang="en">One-dimensional region</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01210"/>
+        <rdfs:comment>A spatial region that has only a single spatial dimension.</rdfs:comment>
     </owl:Class>
     
 
@@ -8293,13 +8307,13 @@ For example, a computation may calculate the radius of a spherical entity accord
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_00211"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_01011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_01011"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_00211"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Primitive entity that is a quantal electrical charge</rdfs:comment>
@@ -8865,7 +8879,7 @@ All capacitive dependencies relate a force (or force differential) to an amount 
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01188"/>
         <discussion>Spatial boundaries are abstractions of the real world that assigns spatial regions to one or another physical entities. As such, specifying a spatial boundary requires a specification (usually implicitly) of spatial scale. For example, a partioning into intra- and extra-cellular spaces may require the specification of an intramembrane space, and further into intracellular and extracellular peri-membrane spaces, which may be further distinguished by the gradient of membrane proteins, glycoproteins, etc. that decorate cell membranes.</discussion>
         <rdfs:comment>A geometrical entity that is a partition between spatial regions</rdfs:comment>
-        <rdfs:comment>Physical boundary that is a spatial entity of one less spatial dimension than the bounded spatial entity it bounds or demarcates from another spatial entity. </rdfs:comment>
+        <rdfs:comment>Spatial boundary that is a spatial regionn that has of one less spatial dimension than the spatial region that it bounds.</rdfs:comment>
     </owl:Class>
     
 
@@ -9034,7 +9048,7 @@ Kinetic boundaries disinguish, say, a portion of glucose and a portion of G6P th
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01339"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
+                <owl:onProperty rdf:resource="&OPB;OPB_00063"/>
                 <owl:onClass rdf:resource="&OPB;OPB_00135"/>
                 <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
             </owl:Restriction>
@@ -9048,7 +9062,7 @@ Kinetic boundaries disinguish, say, a portion of glucose and a portion of G6P th
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00063"/>
+                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
                 <owl:onClass rdf:resource="&OPB;OPB_00135"/>
                 <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
             </owl:Restriction>
@@ -9179,14 +9193,14 @@ For both mass-action chemical rate laws and Fick diffusion equations the cross-p
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00380"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00195"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00195"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00380"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9321,14 +9335,14 @@ Transformation of chemical potential energy as ATP is transduced into the mechan
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00435"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00017"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00017"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00435"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9500,8 +9514,8 @@ In a biological membrane, the reversal potential (also known as the Nernst poten
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01339"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00574"/>
+                <owl:onProperty rdf:resource="&OPB;OPB_00063"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00221"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9514,8 +9528,8 @@ In a biological membrane, the reversal potential (also known as the Nernst poten
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00063"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00221"/>
+                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00574"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10298,14 +10312,14 @@ An ideal gas is a theoretical gas composed of many randomly moving point particl
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00509"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00154"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00154"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00509"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10376,14 +10390,14 @@ where:
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01710"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00154"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00154"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01710"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10422,14 +10436,14 @@ As temperature and pressure are constant, RT/P is also constant and represented 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00509"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01705"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01705"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01710"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10443,7 +10457,7 @@ As temperature and pressure are constant, RT/P is also constant and represented 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01710"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00509"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10805,13 +10819,13 @@ despite copy/pasting  &apos;Temperature&apos;  from its class definition box.
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_00017"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_00435"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_00435"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_00017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -10826,13 +10840,13 @@ despite copy/pasting  &apos;Temperature&apos;  from its class definition box.
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_00195"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_00435"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_00435"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_00195"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -10847,13 +10861,13 @@ despite copy/pasting  &apos;Temperature&apos;  from its class definition box.
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_00380"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_00195"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_00195"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_00380"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
