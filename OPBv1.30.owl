@@ -3311,14 +3311,14 @@ amount of particles in a portion of particles.</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00085"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00373"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00371"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00085"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00371"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00373"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4050,7 +4050,7 @@ Surface tension, usually represented by the symbol γ, is measured in forces per
     <!-- http://bhi.washington.edu/OPB#OPB_01038 -->
 
     <owl:Class rdf:about="&OPB;OPB_01038">
-        <rdfs:label xml:lang="en">Energy transfer dependency</rdfs:label>
+        <rdfs:label xml:lang="en">Energy flow dependency</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01488"/>
     </owl:Class>
     
@@ -4312,13 +4312,13 @@ Clearly, no physical event is truly discrete as that implies a change of physica
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_00435"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_00195"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_00195"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_00435"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <OPB_00072>compound</OPB_00072>
@@ -4518,15 +4518,15 @@ Clearly, no physical event is truly discrete as that implies a change of physica
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01059"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00070"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01348"/>
+                <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00435"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00435"/>
+                <owl:onProperty rdf:resource="&OPB;OPB_00070"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01348"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4542,15 +4542,15 @@ Clearly, no physical event is truly discrete as that implies a change of physica
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01059"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00070"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00182"/>
+                <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00017"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00017"/>
+                <owl:onProperty rdf:resource="&OPB;OPB_00070"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00182"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5254,13 +5254,13 @@ As such it closely related to class term &quot;phenotype&quot; as defined in bio
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_00435"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_00017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_00017"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_00435"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A solid dyamical entity that can participate in a diffusive process, advection or convection.</rdfs:comment>
@@ -7323,15 +7323,15 @@ SI-unit classes map, non-exclusively to classes of OPB:PropertyDimension either 
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01539"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00435"/>
+                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00573"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00573"/>
+                <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00435"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8944,6 +8944,13 @@ Important to realize that MM params, HH params, etc. are all derived and asserte
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01339"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00574"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00063"/>
                 <owl:onClass rdf:resource="&OPB;OPB_00514"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -8953,13 +8960,6 @@ Important to realize that MM params, HH params, etc. are all derived and asserte
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
                 <owl:onClass rdf:resource="&OPB;OPB_00135"/>
-                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00574"/>
                 <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8981,14 +8981,14 @@ All capacitive dependencies relate a force (or force differential) to an amount 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00573"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00480"/>
                 <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00480"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00573"/>
                 <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9217,7 +9217,7 @@ Kinetic boundaries disinguish, say, a portion of glucose and a portion of G6P th
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01339"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00063"/>
+                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
                 <owl:onClass rdf:resource="&OPB;OPB_00135"/>
                 <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
             </owl:Restriction>
@@ -9231,7 +9231,7 @@ Kinetic boundaries disinguish, say, a portion of glucose and a portion of G6P th
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
+                <owl:onProperty rdf:resource="&OPB;OPB_00063"/>
                 <owl:onClass rdf:resource="&OPB;OPB_00135"/>
                 <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
             </owl:Restriction>
@@ -9684,13 +9684,6 @@ In a biological membrane, the reversal potential (also known as the Nernst poten
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00574"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
                 <owl:onClass rdf:resource="&OPB;OPB_00573"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
@@ -9699,6 +9692,13 @@ In a biological membrane, the reversal potential (also known as the Nernst poten
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00063"/>
                 <owl:onClass rdf:resource="&OPB;OPB_00221"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00574"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10440,14 +10440,14 @@ An ideal gas is a theoretical gas composed of many randomly moving point particl
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01708"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00154"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00154"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01708"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10473,6 +10473,13 @@ An ideal gas is a theoretical gas composed of many randomly moving point particl
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00154"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
                 <owl:onClass rdf:resource="&OPB;OPB_01706"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
@@ -10481,13 +10488,6 @@ An ideal gas is a theoretical gas composed of many randomly moving point particl
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
                 <owl:onClass rdf:resource="&OPB;OPB_00509"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00154"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10558,14 +10558,14 @@ where:
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01710"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00154"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00154"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01710"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10597,13 +10597,6 @@ As temperature and pressure are constant, RT/P is also constant and represented 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01705"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
                 <owl:onClass rdf:resource="&OPB;OPB_00509"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
@@ -10612,6 +10605,13 @@ As temperature and pressure are constant, RT/P is also constant and represented 
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
                 <owl:onClass rdf:resource="&OPB;OPB_00154"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01705"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -11001,13 +11001,13 @@ despite copy/pasting  &apos;Temperature&apos;  from its class definition box.
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_00435"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_00195"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_00195"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_00435"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -11022,13 +11022,13 @@ despite copy/pasting  &apos;Temperature&apos;  from its class definition box.
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_00380"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_00195"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_00195"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_00380"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
