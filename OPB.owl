@@ -647,7 +647,7 @@ Note that: &quot;hasParticipant&quot; relates physical processes to physical ent
 
     <owl:ObjectProperty rdf:about="&OPB;OPB_01141">
         <rdfs:label xml:lang="en">hasConstraint</rdfs:label>
-        <rdfs:comment>A hasPropertyAttribute that specifies a constraint on the value of a physical property </rdfs:comment>
+        <rdfs:comment>A hasPropertyAttribute that specifies or limits the value of a physical property </rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="&OPB;OPB_00051"/>
     </owl:ObjectProperty>
     
@@ -3165,8 +3165,8 @@ amount of particles in a portion of particles.</rdfs:comment>
     <owl:Class rdf:about="&OPB;OPB_00464">
         <rdfs:label>Modeling domain</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01585"/>
+        <rdfs:comment>A physics modeling entity that is a branch of physical analysis such as fluid dynamics, geometry, or thermodynamics that is used to analyze a physical continuant, dependency, or processural entity.</rdfs:comment>
         <discussion>Note that a single physical entity may be modeled and analyzed in more than a single physical domain. For example, a molecule may participate in undergo (1) chemical transformation (chemical kinetic domain), (2) diffusion (diffusion kinetic domain), (3) structural deformation (solid mechanical domain), and, even (4) change of informational entropy (due to reorganization; information domain). Thus domains try to capture what aspects of an entity are of interest and abstraction in a given analysis.</discussion>
-        <rdfs:comment>A physics attribute that is a branch of physical analysis such as fluid dynamics, geometry, or thermodynamics that is used to analyze a physical continuant, dependency, or processural entity.</rdfs:comment>
     </owl:Class>
     
 
@@ -4021,8 +4021,8 @@ Thus, in a simulation model, a femur is annotated as both and independently, an 
     <owl:Class rdf:about="&OPB;OPB_01025">
         <rdfs:label xml:lang="en">Constitutive process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01259"/>
-        <rdfs:comment>A physical process whose rates are determined by a constitutive dependency.</rdfs:comment>
         <OPB_00072>energy bond</OPB_00072>
+        <rdfs:comment>A physical process whose rate is determined by a constitutive dependency.</rdfs:comment>
     </owl:Class>
     
 
@@ -5505,7 +5505,7 @@ As such it closely related to class term &quot;phenotype&quot; as defined in bio
                 <owl:someValuesFrom rdf:resource="&OPB;OPB_01571"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A physics model entity that consists of physics continuants and their physics attributes that depend upon one another by physics dependencies
+        <rdfs:comment>A physics model that consists of physics continuants and their physics attributes that depend upon one another by physics dependencies
 
 A physics model entity that consists of a collection of physics attributes or continuants or connected by dependencies</rdfs:comment>
     </owl:Class>
@@ -5696,15 +5696,6 @@ A physics model entity that consists of a collection of physics attributes or co
         <rdfs:label xml:lang="en">Mechanical transformer process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01719"/>
         <rdfs:comment>A transformer process whose rates are determined by a mechanical transformer dependency.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://bhi.washington.edu/OPB#OPB_01187 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01187">
-        <rdfs:label xml:lang="en">Constraint process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01259"/>
     </owl:Class>
     
 
@@ -6726,7 +6717,7 @@ http://www.physiologyweb.com/lecture_notes/resting_membrane_potential/resting_me
     <owl:Class rdf:about="&OPB;OPB_01278">
         <rdfs:label xml:lang="en">Mathematical dependency</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01585"/>
-        <rdfs:comment>A mathematical entity that relate quantitiative values of properties according the mathematical theory.</rdfs:comment>
+        <rdfs:comment>A physics modeling entity that relate quantitiative values of properties according the mathematical theory.</rdfs:comment>
         <discussion>OPB representation of mathematical entities is left primitive in deference to other mathematical resources. To attempt a more thorough representation opens a slippery slope into representing the entirety of math theory and practice. It seems useful to represent commonly used mathematical functions (e.g., trig functions, differential &amp; integral calculus, complex numbers) there is a danger in doing so in manner that is as stringent and complete as are the representations of physics.</discussion>
     </owl:Class>
     
@@ -7225,9 +7216,8 @@ formalized as SC:successor state axiom</discussion>
     <!-- http://bhi.washington.edu/OPB#OPB_01323 -->
 
     <owl:Class rdf:about="&OPB;OPB_01323">
-        <rdfs:label xml:lang="en">Modeling entity</rdfs:label>
+        <rdfs:label xml:lang="en">Physics model</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01585"/>
-        <rdfs:comment>A semantic or mathematical entity consisting of physical analytical entities that represent biological continuants and processes for analysis of the real world</rdfs:comment>
         <rdfs:comment>Defining &quot;physics model&quot; is an attempt to capture the idea that analytical models in the domain of biology carry more meaning than the mere mathematics eauations and the corresponding computational bits &amp; bytes used to compute results and make predictions. Whereas &quot;realist&quot; ontologies assert that an ontological class (e.g., for &quot;heart&quot;) is an abstract representation of individual instances of the hearts that exist in the &quot;real&quot; world. Thus there is only one class of &quot;heart&quot; (for each ontology) that is required to represent one or all real hearts.
 
 However, the relationship of a biophysical hearts to their analytical models is much more complex. There is, and there will not be, a complete model of a heart that analytically represents all molecules and their interactions. Thus, models have value only insofar as they are useful for particular analytical purposes and, thus, &quot;all models are wrong, but some maybe useful&quot;.
@@ -7249,6 +7239,7 @@ first, there may be multiple, different analytical models created to replicate a
 
 
 </rdfs:comment>
+        <rdfs:comment>A physics modeling entity that is a semantic or mathematical entity consisting of physical analytical entities that represent biological continuants and processes for analysis of the real world</rdfs:comment>
     </owl:Class>
     
 
@@ -7353,9 +7344,9 @@ first, there may be multiple, different analytical models created to replicate a
     <!-- http://bhi.washington.edu/OPB#OPB_01334 -->
 
     <owl:Class rdf:about="&OPB;OPB_01334">
-        <rdfs:label xml:lang="en">Statistical entity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01585"/>
-        <discussion>A mathematical entity that is an entity or dependency used for the statistical analysis of sets of physics analytical enitites</discussion>
+        <rdfs:label xml:lang="en">Statistical model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_01323"/>
+        <discussion>A physics model that is an entity or dependency used for the statistical analysis of sets of physics analytical enitites</discussion>
     </owl:Class>
     
 
@@ -8016,7 +8007,7 @@ For purposes of dynamical modeling and until there are compelling use-cases and 
     <owl:Class rdf:about="&OPB;OPB_01390">
         <rdfs:label xml:lang="en">Informational property</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01585"/>
-        <rdfs:comment>A physical property that is a measure of the information content of a spatial distribution of entities or physical property values, or of a temporal distribution of process events as occurs during a process trajectory.</rdfs:comment>
+        <rdfs:comment>A physics modeling entity that is a measure of the information content of a spatial distribution of entities or physical property values, or of a temporal distribution of process events as occurs during a process trajectory.</rdfs:comment>
         <discussion>Whereas information theory has broad applications and implications for the occurrence of biophysical processes, its formal representation in the OPB is deferred pending requirements for annotating use-cases.
 
 Suitable references for information theory applications are:
@@ -8050,7 +8041,7 @@ This includes, for examples, the value quantitative values of physical propertie
     <!-- http://bhi.washington.edu/OPB#OPB_01392 -->
 
     <owl:Class rdf:about="&OPB;OPB_01392">
-        <rdfs:label xml:lang="en">Boundary constraint</rdfs:label>
+        <rdfs:label xml:lang="en">Dynamical property constraint</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01404"/>
         <discussion>State dependencies represent static relations between state property values that, in &quot;reality&quot;, are simultaneously true for an entity at any temporal instant. However, OPB is designed for annotating computational representations of that reality such that adjusting values does not occur instantaneously, as in reality, but is achieve sequentially by computational procedures. 
 
@@ -10612,7 +10603,7 @@ All resistive dependencies relate a force (or force differential) to a flow-rate
                 <owl:someValuesFrom rdf:resource="&OPB;OPB_00439"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A physics modeling entity consisting of an ordered or unordered collection of physics attributes. continuants or dependencies used for statistical characterization of the a.</rdfs:comment>
+        <rdfs:comment>A physics model that consists of an ordered or unordered collection of physics attributes. continuants or dependencies used for statistical characterization of the a.</rdfs:comment>
     </owl:Class>
     
 
@@ -10668,12 +10659,12 @@ All resistive dependencies relate a force (or force differential) to a flow-rate
     <!-- http://bhi.washington.edu/OPB#OPB_01585 -->
 
     <owl:Class rdf:about="&OPB;OPB_01585">
-        <rdfs:label xml:lang="en">Physics model entity</rdfs:label>
+        <rdfs:label xml:lang="en">Physics modeling entity </rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_00528"/>
         <discussion>
 
 </discussion>
-        <rdfs:comment>A physics analytical entity that is a mathematical quantity, function or dependency that is useful for the representation and analysis of biophysical systems.</rdfs:comment>
+        <rdfs:comment>A physics analytical entity that is a mathematical or computational quantity, function or dependency that is useful for the representation and analysis of biophysical systems.</rdfs:comment>
     </owl:Class>
     
 
@@ -10835,7 +10826,7 @@ All resistive dependencies relate a force (or force differential) to a flow-rate
     <owl:Class rdf:about="&OPB;OPB_01598">
         <rdfs:label xml:lang="en">Mathematical constant</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01585"/>
-        <rdfs:comment>A mathematical entity that is a real or imaginary scalar quantity useful for the analysis of physical systems.</rdfs:comment>
+        <rdfs:comment>A physics modeling entity that is a real or imaginary scalar quantity useful for the analysis of physical systems.</rdfs:comment>
     </owl:Class>
     
 
@@ -11018,6 +11009,7 @@ http://www.unitsofmeasurement.org/apidocs/index.html</OPB_00072>
     <owl:Class rdf:about="&OPB;OPB_01613">
         <rdfs:label xml:lang="en">Geometrical entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01585"/>
+        <rdfs:comment>A physics modeling entity that is a geometrical form used to represent physics continuants, process or modelting entities.</rdfs:comment>
     </owl:Class>
     
 
@@ -11284,7 +11276,7 @@ More complete OPB support for cotransport will await the needs of suitable use-c
     <!-- http://bhi.washington.edu/OPB#OPB_01635 -->
 
     <owl:Class rdf:about="&OPB;OPB_01635">
-        <rdfs:label xml:lang="en">Junction rate constraint</rdfs:label>
+        <rdfs:label xml:lang="en">Junctional rate constraint</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01276"/>
         <rdfs:comment>A rate constraint that the sum of the rates of all flows converging at a common node is identically zero; a &quot;zero junction&quot; in bond graph theory</rdfs:comment>
         <OPB_00072>Kirchhoff&apos;s junction rule</OPB_00072>
@@ -11516,15 +11508,6 @@ More complete OPB support for cotransport will await the needs of suitable use-c
         <rdfs:label xml:lang="en">Angle of spatial entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01244"/>
         <rdfs:comment>A spatial base amount that is required to superimpose two straight lines by rotation about an intersection of the lines</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://bhi.washington.edu/OPB#OPB_01660 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01660">
-        <rdfs:label xml:lang="en">Physics model</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01323"/>
     </owl:Class>
     
 
