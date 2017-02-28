@@ -942,7 +942,7 @@ The distinction between &quot;through&quot; and &quot;cross&quot; properties (va
     <owl:Class rdf:about="&OPB;OPB_00013">
         <rdfs:label>Portion of kinetic energy</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_00021"/>
-        <rdfs:comment>A portion of energy attributed to the velocity of a dynamical entity.</rdfs:comment>
+        <rdfs:comment>A portion of energy attributed to the motion of a dynamical entity.</rdfs:comment>
     </owl:Class>
     
 
@@ -1814,7 +1814,7 @@ IUPAC. (2011). &quot;A concise summary of Quantities, Units and Symbols in Physi
         <discussion>Physical properties classes are categorized according to the analytical domain in which they have meaning. For example, OPB:Dynamical properties apply to the domain of dynamical systems for which the concepts of thermodynamics have meaning, whereas OPB:Spatial properties apply to spatial and geometrical concepts that have no thermodynamic meaning. 
 
 The representations of OPB:Information content and OPB:Statistical properties are deferred pending appropriate use-case needs.</discussion>
-        <rdfs:comment>A physics attribute that is a scalar, vector or tensor attribute of a physics continuant, physical process or physics dependency that is observable and measureable by physical means or derived by computations on such measures.</rdfs:comment>
+        <rdfs:comment>A physics attribute that is a scalar, vector or tensor quantity of a physics continuant, physical process or physics dependency that is observable and measureable by physical means or derived by computations on such measures.</rdfs:comment>
     </owl:Class>
     
 
@@ -2888,7 +2888,7 @@ An example of the quantitative property dependency is: E1 = nE2, and nF1 = F2, w
     <!-- http://bhi.washington.edu/OPB#OPB_00408 -->
 
     <owl:Class rdf:about="&OPB;OPB_00408">
-        <rdfs:label>Property value mathematical form</rdfs:label>
+        <rdfs:label>Property mathematical form</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_00353"/>
         <discussion>--- outsource this class to existing ontology??</discussion>
         <rdfs:comment>A property value attribute that is the mathematical form of an encoded datum or variable </rdfs:comment>
@@ -3162,7 +3162,7 @@ amount of particles in a portion of particles.</rdfs:comment>
     <!-- http://bhi.washington.edu/OPB#OPB_00471 -->
 
     <owl:Class rdf:about="&OPB;OPB_00471">
-        <rdfs:label>Spatial scope</rdfs:label>
+        <rdfs:label>Property spatial scope</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_00353"/>
         <rdfs:comment>A physical property has discrete extensive if it&apos;s value applies to the entire spatial region occupied by a physical entity and is the spatial integral of a property and is proportional to the spatial extent or mass of the entity.</rdfs:comment>
     </owl:Class>
@@ -4330,9 +4330,9 @@ Surface tension, usually represented by the symbol γ, is measured in forces per
     <owl:Class rdf:about="&OPB;OPB_01057">
         <rdfs:label xml:lang="en">Property value</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01100"/>
-        <rdfs:comment>&quot;Property value&quot; classes provide formal classifications of the kinds of measurements made in the course of physical experiments and analyses according to the use intended for the value. For example a value may represent a single measurement recorded from an instrument, the value as scaled to a system of measures such as Systeme Internationale, the value as a statistical measure of a set of values, or the value of a correlation between two sets of measures. 
+        <discussion>&quot;Property value&quot; classes provide formal classifications of the kinds of measurements made in the course of physical experiments and analyses according to the use intended for the value. For example a value may represent a single measurement recorded from an instrument, the value as scaled to a system of measures such as Systeme Internationale, the value as a statistical measure of a set of values, or the value of a correlation between two sets of measures. 
 
-Annotations of Property value classes are intended to formally distiguish property values that should be compared or analyzed with care.</rdfs:comment>
+Annotations of Property value classes are intended to formally distiguish property values that should be compared or analyzed with care.</discussion>
         <rdfs:comment>Attribute of property that is the magnitude of an instance of a property.</rdfs:comment>
     </owl:Class>
     
@@ -5033,12 +5033,12 @@ See, for example,  &quot;spherical cow&quot; as an abstract model of a real cow 
     <owl:Class rdf:about="&OPB;OPB_01121">
         <rdfs:label>Physical condition</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01487"/>
-        <discussion>The class &apos;Physical continuant state&apos; is intended to represent the physics concept of the &quot;state&quot; of a system which comprehends all physical state variables e.g., locations, energies, dynamic properties) as well as a description of the structural composition of physical entities that comprise the entity or system.
+        <discussion>The class &apos;Physical conditon&apos; is intended to represent the physics concept of the &quot;state&quot; of a system which comprehends all physical state variables e.g., locations, energies, dynamic properties) as well as a description of the structural composition of physical entities that comprise the entity or system.
 
 As such it closely related to class term &quot;phenotype&quot; as defined in biomedical phenotype ontologies (e.g., PATO: Phenotype And Trait Ontology, HPO: Human Phenotype Ontology). However, &apos;state&apos; in OPB excludes psychological, genomic, evolutionary and other biological attributes except as measureable and quantifiable in terms of physical measures.. Thus, for the biomedical domain, OPB uses &quot;Physical state&quot; to comprehend the concepts of &quot;state&quot; and &quot;fluent&quot; as follows: 
 
 &quot;Physical state&quot; should also be synonymous with the concept of &quot;fluent&quot; (as in the situation calculus, the Process Specification Language, and OBO:Process Ontology) which is a changeable aspect of a system.</discussion>
-        <rdfs:comment>A physics attribute of a physical continuant entity at a moment in time that is specified by at least one physical state component </rdfs:comment>
+        <rdfs:comment>A physics attribute of a physical continuant entity that specifies at least one of its structural relations, existential type, and/or physical property value at a moment in time.</rdfs:comment>
     </owl:Class>
     
 
@@ -5383,7 +5383,7 @@ As such it closely related to class term &quot;phenotype&quot; as defined in bio
 
     <owl:Class rdf:about="&OPB;OPB_01155">
         <rdfs:label>Particulate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01368"/>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_01240"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
@@ -5454,6 +5454,15 @@ As such it closely related to class term &quot;phenotype&quot; as defined in bio
     
 
 
+    <!-- http://bhi.washington.edu/OPB#OPB_01161 -->
+
+    <owl:Class rdf:about="&OPB;OPB_01161">
+        <rdfs:label xml:lang="en">Constraint process ( really? )</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_01259"/>
+    </owl:Class>
+    
+
+
     <!-- http://bhi.washington.edu/OPB#OPB_01162 -->
 
     <owl:Class rdf:about="&OPB;OPB_01162">
@@ -5519,8 +5528,9 @@ A physics model entity that consists of a collection of physics attributes or co
     <!-- http://bhi.washington.edu/OPB#OPB_01167 -->
 
     <owl:Class rdf:about="&OPB;OPB_01167">
-        <rdfs:label xml:lang="en">Mechanical solid</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01368"/>
+        <rdfs:label xml:lang="en">Lagrangian energy amount</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_00562"/>
+        <rdfs:comment>An energy amount for a dynamical ehtity that is the algebraic difference its kinetic energy minus its potential energy.</rdfs:comment>
     </owl:Class>
     
 
@@ -5707,7 +5717,7 @@ A physics model entity that consists of a collection of physics attributes or co
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A spatial region is a continuant entity that is a continuant_part_of spaceR as defined relative to some frame R</rdfs:comment>
+        <rdfs:comment>A spatial entity is a physics continuant that is a part of space and is defined relative to a spatial reference frame.</rdfs:comment>
         <discussion>Definition (&quot;comment&quot;) is verbatim from the definition of BFO:Spaatial region. However, physical analytical entities must include bounded regions (ala BFO &quot;realism&quot;) as well as unbounded physical regions of electrical and gravitational fields, as well as for analytical fictions such as used for spatial integrals from a spatial origin to spatial infinity.</discussion>
     </owl:Class>
     
@@ -6492,7 +6502,7 @@ A physics model entity that consists of a collection of physics attributes or co
                 <owl:someValuesFrom rdf:resource="&OPB;OPB_01014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A physics processual entity that is a flow or exchange of thermodynamic energy and/or information amongst dynamical entities defined as process participants.</rdfs:comment>
+        <rdfs:comment>A physics processual entity that is a flow or exchange of thermodynamic energy and/or information amongst dynamical entities that are participants in the process.</rdfs:comment>
     </owl:Class>
     
 
@@ -6641,7 +6651,7 @@ http://www.physiologyweb.com/lecture_notes/resting_membrane_potential/resting_me
     <!-- http://bhi.washington.edu/OPB#OPB_01276 -->
 
     <owl:Class rdf:about="&OPB;OPB_01276">
-        <rdfs:label xml:lang="en">Rate constraint</rdfs:label>
+        <rdfs:label xml:lang="en">Kirchoff constraint</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01404"/>
         <OPB_00072>Kirchoff&apos;s laws</OPB_00072>
         <rdfs:comment>A dynamical constraint on the values of two or more rate properties</rdfs:comment>
@@ -6682,37 +6692,9 @@ http://www.physiologyweb.com/lecture_notes/resting_membrane_potential/resting_me
     <!-- http://bhi.washington.edu/OPB#OPB_01281 -->
 
     <owl:Class rdf:about="&OPB;OPB_01281">
-        <rdfs:label xml:lang="en">Summatiion constraint</rdfs:label>
+        <rdfs:label xml:lang="en">Summation constraint</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01404"/>
         <rdfs:comment>A dynamical constraint on the sum of a set of dynamical property values.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://bhi.washington.edu/OPB#OPB_01282 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01282">
-        <rdfs:label xml:lang="en">Informational dependency</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01391"/>
-        <rdfs:comment>A physics dependency for the quantification, storage, and communication of information amongst participants in an informational process.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://bhi.washington.edu/OPB#OPB_01283 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01283">
-        <rdfs:label xml:lang="en">Information transmission dependency</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01282"/>
-    </owl:Class>
-    
-
-
-    <!-- http://bhi.washington.edu/OPB#OPB_01284 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01284">
-        <rdfs:label xml:lang="en">Information transformation dependency</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01282"/>
     </owl:Class>
     
 
@@ -7065,8 +7047,8 @@ formalized as SC:successor state axiom</discussion>
     <owl:Class rdf:about="&OPB;OPB_01317">
         <rdfs:label xml:lang="en">Thermodynamic potential</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_00021"/>
-        <rdfs:comment>A portion of energy defined as algebraic sums or differences of portions of energy of dipatate classes that inhers in a dynamical entity.</rdfs:comment>
         <discussion>Thermodynamic potentials are quantified by scalar, extensive variables (e.g., U, H, F, G...) and are used predominanty (historically?) for the analysis of chemical and fluid systems. Consequently, the kinetic and potential energies of other entities </discussion>
+        <rdfs:comment>A portion of energy defined as algebraic sums or differences of portions of energy defined according to constraints on the values of physical properties.</rdfs:comment>
     </owl:Class>
     
 
@@ -7075,7 +7057,7 @@ formalized as SC:successor state axiom</discussion>
 
     <owl:Class rdf:about="&OPB;OPB_01318">
         <rdfs:label xml:lang="en">Mechanical joint</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01368"/>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_00263"/>
         <rdfs:comment>A discrete dynamical entity consisting of two mechanical solids whose form a kinematic pair having constrained relative motions</rdfs:comment>
     </owl:Class>
     
@@ -7690,9 +7672,9 @@ The International System of Quantities (ISQ) is a system based on seven base qua
     <!-- http://bhi.washington.edu/OPB#OPB_01368 -->
 
     <owl:Class rdf:about="&OPB;OPB_01368">
-        <rdfs:label xml:lang="en">Discrete solid</rdfs:label>
+        <rdfs:label xml:lang="en">Mechanical solid</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01240"/>
-        <rdfs:comment>A discrete mechanical structure with inherent shape that resists deformation by applied forces.</rdfs:comment>
+        <rdfs:comment>A solid dynamical entity that has contiguous structure. {not quite right yet}</rdfs:comment>
     </owl:Class>
     
 
@@ -7877,7 +7859,7 @@ For purposes of dynamical modeling and until there are compelling use-cases and 
     <!-- http://bhi.washington.edu/OPB#OPB_01387 -->
 
     <owl:Class rdf:about="&OPB;OPB_01387">
-        <rdfs:label xml:lang="en">Process post-condition</rdfs:label>
+        <rdfs:label xml:lang="en">Process pre-condition</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01435"/>
         <discussion>A process precondition is a concept in the situation calculus. A precondition is a necessary and sufficient condition of the participants for initiating an occurence of a process</discussion>
         <rdfs:comment>A process occurrence condition that is necessary and sufficient to initiate an occurrence of a physical process</rdfs:comment>
@@ -7931,7 +7913,7 @@ Suitable references for information theory applications are:
     <owl:Class rdf:about="&OPB;OPB_01391">
         <rdfs:label xml:lang="en">Physics dependency</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_00528"/>
-        <rdfs:comment>Physics analytical entity that is an axiom, definition or empirical law of physics that relates the existence and attributes of physics continuants to the occurrence of physical changes and processes.</rdfs:comment>
+        <rdfs:comment>Physics analytical entity that is an axiom, definition or empirical law of physics that relates the existence and attributes of physics continuants to the occurrence of physical causal changes and processes.</rdfs:comment>
         <discussion>Physical dependencies represent a broad class of quantitative and qualitative relationships amongst physical entities and the attributes of physical entities, physical continuants, and physical processes. 
 
 These are the rules by which dynamical and information systems operate and are routinely encoded for analysis and simulation in a variety of computational and mathematical systems.
@@ -7945,7 +7927,7 @@ This includes, for examples, the value quantitative values of physical propertie
     <!-- http://bhi.washington.edu/OPB#OPB_01392 -->
 
     <owl:Class rdf:about="&OPB;OPB_01392">
-        <rdfs:label xml:lang="en">Dynamical property constraint</rdfs:label>
+        <rdfs:label xml:lang="en">Dynamical constraint</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01404"/>
         <discussion>State dependencies represent static relations between state property values that, in &quot;reality&quot;, are simultaneously true for an entity at any temporal instant. However, OPB is designed for annotating computational representations of that reality such that adjusting values does not occur instantaneously, as in reality, but is achieve sequentially by computational procedures. 
 
@@ -8563,7 +8545,7 @@ For example, a computation may calculate the radius of a spherical entity accord
     <owl:Class rdf:about="&OPB;OPB_01435">
         <rdfs:label xml:lang="en">Process occurrence condition</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01121"/>
-        <rdfs:comment>A physical condition that is the physical state of a continuant participant in a physical process.</rdfs:comment>
+        <rdfs:comment>A physical condition that is the physical state of a continuant participant at either the initiation or termination of a physical process.</rdfs:comment>
     </owl:Class>
     
 
@@ -9157,7 +9139,7 @@ For example, a computation may calculate the radius of a spherical entity accord
     <owl:Class rdf:about="&OPB;OPB_01485">
         <rdfs:label xml:lang="en">Total energy flow rate</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_00563"/>
-        <rdfs:comment>Energy flow rate that is the temporal rate of transfer of kinetic plus potential energy from one dynamical entity to another.</rdfs:comment>
+        <rdfs:comment>Energy flow rate that is the temporal rate of transfer of kinetic plus potential energy from across the boundary separating two dynamical entities.</rdfs:comment>
     </owl:Class>
     
 
@@ -9748,9 +9730,9 @@ Kinetic boundaries disinguish, say, a portion of glucose and a portion of G6P th
     <!-- http://bhi.washington.edu/OPB#OPB_01535 -->
 
     <owl:Class rdf:about="&OPB;OPB_01535">
-        <rdfs:label xml:lang="en">Physical state condition</rdfs:label>
+        <rdfs:label xml:lang="en">Physical state component</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01121"/>
-        <rdfs:comment>A part of a physical condition that defines a physical state of a physical entity.</rdfs:comment>
+        <rdfs:comment>A component of a physical condition that defines a physical state of a physical entity.</rdfs:comment>
     </owl:Class>
     
 
@@ -10714,7 +10696,7 @@ A measure of the total quantity of energy that had to be dispersed within a quan
 &quot;entropy change = quantity of energy dispersed at a temperature T&quot;</discussion>
         <rdfs:seeAlso>Lambert, Frank L., &quot;Entropy is Simple, Qualitatively&quot;, JChemEd.chem.wisc.edu. Vol 79, No. 10, October 2002</rdfs:seeAlso>
         <OPB_00103></OPB_00103>
-        <rdfs:comment>The total quantity of energy that had to be dispersed within a quantity of substance at a given temperature beginning at absolute zero</rdfs:comment>
+        <rdfs:comment>The total quantity of energy that is dispersed within a quantity of substance at a given temperature beginning at absolute zero.</rdfs:comment>
     </owl:Class>
     
 
@@ -10746,6 +10728,13 @@ A measure of the total quantity of energy that had to be dispersed within a quan
     <owl:Class rdf:about="&OPB;OPB_01604">
         <rdfs:label xml:lang="en">Isobaric constraint</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01603"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01084"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>A thermodynamic constraint that pressure within a dynamical entity is invariant both spatially and temporally.</rdfs:comment>
     </owl:Class>
     
@@ -10756,6 +10745,13 @@ A measure of the total quantity of energy that had to be dispersed within a quan
     <owl:Class rdf:about="&OPB;OPB_01605">
         <rdfs:label xml:lang="en">Isothermal constraint</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01603"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00293"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>A thermodynamic constraint that the temperature within a dynamical entity is invariant both spatially and temporally.</rdfs:comment>
     </owl:Class>
     
@@ -10766,6 +10762,13 @@ A measure of the total quantity of energy that had to be dispersed within a quan
     <owl:Class rdf:about="&OPB;OPB_01606">
         <rdfs:label xml:lang="en">Isovolumetric constraint</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01603"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00523"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>A thermodynamic constraint that there is no change in the volume of a dynamical entity</rdfs:comment>
     </owl:Class>
     
@@ -10776,6 +10779,13 @@ A measure of the total quantity of energy that had to be dispersed within a quan
     <owl:Class rdf:about="&OPB;OPB_01607">
         <rdfs:label xml:lang="en">Isentropic constraint</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01603"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00564"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>A thermodynamic constraint that there is no exchange of entropy across the dynamical boundary nor change in the entropy of a dynamical entity.</rdfs:comment>
     </owl:Class>
     
@@ -10786,6 +10796,13 @@ A measure of the total quantity of energy that had to be dispersed within a quan
     <owl:Class rdf:about="&OPB;OPB_01608">
         <rdfs:label xml:lang="en">Adiabatic constraint</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01603"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00563"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>A thermodynamic constraint that there is no flow of energy or matter across the dynamical boundary of a dynamical entity</rdfs:comment>
     </owl:Class>
     
@@ -10809,6 +10826,13 @@ http://www.unitsofmeasurement.org/apidocs/index.html</OPB_00072>
     <owl:Class rdf:about="&OPB;OPB_01610">
         <rdfs:label xml:lang="en">Lagrangian constraint</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01603"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01167"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>A thermodynamic constraint that the sum of potential energy plus kinetic energy of a dynamical entity is temporally invariant</rdfs:comment>
     </owl:Class>
     
