@@ -1246,15 +1246,6 @@ The distinction between &quot;through&quot; and &quot;cross&quot; properties (va
     
 
 
-    <!-- http://bhi.washington.edu/OPB#OPB_00040 -->
-
-    <owl:Class rdf:about="&OPB;OPB_00040">
-        <rdfs:label xml:lang="en">Total volume of shape</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01248"/>
-    </owl:Class>
-    
-
-
     <!-- http://bhi.washington.edu/OPB#OPB_00041 -->
 
     <owl:Class rdf:about="&OPB;OPB_00041">
@@ -1823,7 +1814,7 @@ IUPAC. (2011). &quot;A concise summary of Quantities, Units and Symbols in Physi
         <discussion>Physical properties classes are categorized according to the analytical domain in which they have meaning. For example, OPB:Dynamical properties apply to the domain of dynamical systems for which the concepts of thermodynamics have meaning, whereas OPB:Spatial properties apply to spatial and geometrical concepts that have no thermodynamic meaning. 
 
 The representations of OPB:Information content and OPB:Statistical properties are deferred pending appropriate use-case needs.</discussion>
-        <rdfs:comment>A physics attribute that is a scalar, vector or tensor attribute of a physics continuant, physical process or physics dependency that is observable and measureable by physical means or derived by a computation on such measures.</rdfs:comment>
+        <rdfs:comment>A physics attribute that is a scalar, vector or tensor attribute of a physics continuant, physical process or physics dependency that is observable and measureable by physical means or derived by computations on such measures.</rdfs:comment>
     </owl:Class>
     
 
@@ -1840,24 +1831,6 @@ The representations of OPB:Information content and OPB:Statistical properties ar
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://bhi.washington.edu/OPB#OPB_00154 -->
-
-    <owl:Class rdf:about="&OPB;OPB_00154">
-        <rdfs:label>Fluid volume</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_00523"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00380"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <classTerm rdf:datatype="&xsd;string">Fluid volume</classTerm>
-        <rdfs:comment>An amount property that is the temporal integral of a fluid flow</rdfs:comment>
     </owl:Class>
     
 
@@ -2552,12 +2525,12 @@ However, for discrete modeling, the temperature of an entity can be assigned a v
     <!-- http://bhi.washington.edu/OPB#OPB_00295 -->
 
     <owl:Class rdf:about="&OPB;OPB_00295">
-        <rdfs:label>Area of spatial entity</rdfs:label>
+        <rdfs:label>Spatial area</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01244"/>
+        <rdfs:comment>A spatial property that is the two-dimensional extent of a surface region.</rdfs:comment>
         <OPB_01068>PATO:0001323</OPB_01068>
         <OPB_00072>area</OPB_00072>
         <OPB_00072>surface area</OPB_00072>
-        <rdfs:comment>A spatial base amount that is the two-dimensional extent of a surface region.</rdfs:comment>
     </owl:Class>
     
 
@@ -3346,7 +3319,7 @@ amount of particles in a portion of particles.</rdfs:comment>
     <owl:Class rdf:about="&OPB;OPB_00510">
         <rdfs:label>Temporal entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01367"/>
-        <rdfs:comment>A physics process entity that is an instant or span of time.</rdfs:comment>
+        <rdfs:comment>A physics processural entity that is an instant or span of time.</rdfs:comment>
     </owl:Class>
     
 
@@ -3394,11 +3367,11 @@ amount of particles in a portion of particles.</rdfs:comment>
     <!-- http://bhi.washington.edu/OPB#OPB_00523 -->
 
     <owl:Class rdf:about="&OPB;OPB_00523">
-        <rdfs:label>Volume of spatial entity</rdfs:label>
+        <rdfs:label>Spatial volume</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01244"/>
         <OPB_01068>PATO:0000918</OPB_01068>
         <OPB_00072>volume</OPB_00072>
-        <rdfs:comment>A spatial base amount that is the quantity of space enclosed in a bounded volume region</rdfs:comment>
+        <rdfs:comment>A spatial property that is the quantity of space enclosed in a bounded volume region</rdfs:comment>
     </owl:Class>
     
 
@@ -3648,7 +3621,7 @@ The OPB does not include quantum or relativistic physics, nor is it intended to 
     <owl:Class rdf:about="&OPB;OPB_00568">
         <rdfs:label>Dynamical property</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_00147"/>
-        <rdfs:comment>A physical property that is an attribute of an energy-bearing physical entity, a dynamical process or a constitutive dynamical dependency whose value determines the amount or rate of change of the amount of thermodynamic energy inhering in the entity or the rate of energy transfer during a dynamical process.</rdfs:comment>
+        <rdfs:comment>A physical property that is an attribute of a dynamical entity, a dynamical process or a constitutive dynamical dependency whose value determines the amount or rate of change of thermodynamic energy inhering in the entity or the rate of energy transfer during a dynamical process.</rdfs:comment>
         <discussion>OPB:Dynamical properties are attributes of dynamical systems whose values determine the thermodynamic content, forces, and flows of the system&apos;s participants and processes. The categorization of properties parallels that of OPB:Physical processes and OPB:Dynamical dependency, follows the development seen in:
 
 1. Borst, P., H. Akkermans, and J. Top: Engineering ontologies. Int. J. Human–Computer Studies 1997. 46:365-406.
@@ -4035,7 +4008,7 @@ Thus, in a simulation model, a femur is annotated as both and independently, an 
     <owl:Class rdf:about="&OPB;OPB_01023">
         <rdfs:label xml:lang="en">Time</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01442"/>
-        <rdfs:comment>Primitive physical entity that is time.</rdfs:comment>
+        <rdfs:comment>A primitive physical entity that is time.</rdfs:comment>
         <OPB_01068>PATO:0002284</OPB_01068>
     </owl:Class>
     
@@ -4398,16 +4371,6 @@ Clearly, no physical event is truly discrete as that implies a change of physica
     
 
 
-    <!-- http://bhi.washington.edu/OPB#OPB_01061 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01061">
-        <rdfs:label xml:lang="en">Volume of spatial region</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_00523"/>
-        <rdfs:comment>A spatial amount that is the quantity of space enclosed in a bounded volume region</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://bhi.washington.edu/OPB#OPB_01062 -->
 
     <owl:Class rdf:about="&OPB;OPB_01062">
@@ -4429,10 +4392,10 @@ Clearly, no physical event is truly discrete as that implies a change of physica
     <!-- http://bhi.washington.edu/OPB#OPB_01064 -->
 
     <owl:Class rdf:about="&OPB;OPB_01064">
-        <rdfs:label xml:lang="en">Span of spatial entity</rdfs:label>
+        <rdfs:label xml:lang="en">Spatial span</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01244"/>
         <OPB_01068>PATO:0001708</OPB_01068>
-        <rdfs:comment>A spatial amount that is the spatial distance between two spatial points.</rdfs:comment>
+        <rdfs:comment>A spatial property that is the spatial distance between two spatial points.</rdfs:comment>
     </owl:Class>
     
 
@@ -5461,6 +5424,16 @@ As such it closely related to class term &quot;phenotype&quot; as defined in bio
     
 
 
+    <!-- http://bhi.washington.edu/OPB#OPB_01158 -->
+
+    <owl:Class rdf:about="&OPB;OPB_01158">
+        <rdfs:label xml:lang="en">Spatial location</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_01244"/>
+        <rdfs:comment>A spatial property that is a set of coordinate values (in 1-, 2-, or 3-dimensions) of point in space relative to the origin of a coordinate system.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://bhi.washington.edu/OPB#OPB_01159 -->
 
     <owl:Class rdf:about="&OPB;OPB_01159">
@@ -5901,7 +5874,7 @@ A physics model entity that consists of a collection of physics attributes or co
                 <owl:someValuesFrom rdf:resource="&OPB;OPB_01426"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Primitive physical entity that is space.</rdfs:comment>
+        <rdfs:comment>A primitive physical entity that is space.</rdfs:comment>
     </owl:Class>
     
 
@@ -6021,9 +5994,9 @@ A physics model entity that consists of a collection of physics attributes or co
     <!-- http://bhi.washington.edu/OPB#OPB_01213 -->
 
     <owl:Class rdf:about="&OPB;OPB_01213">
-        <rdfs:label xml:lang="en">Curvature of spatial entity</rdfs:label>
+        <rdfs:label xml:lang="en">Spatial curvature</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01244"/>
-        <rdfs:comment>A spatial base amount that is the degree to which a spatial line region or surface region deviates from being straight or flat, respectively.</rdfs:comment>
+        <rdfs:comment>A spatial property that is the degree to which a spatial line region or surface region deviates from being straight or flat, respectively.</rdfs:comment>
     </owl:Class>
     
 
@@ -6357,8 +6330,8 @@ A physics model entity that consists of a collection of physics attributes or co
     <!-- http://bhi.washington.edu/OPB#OPB_01244 -->
 
     <owl:Class rdf:about="&OPB;OPB_01244">
-        <rdfs:label xml:lang="en">Spatial amount</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_00135"/>
+        <rdfs:label xml:lang="en">Spatial property</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_00147"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
@@ -6366,12 +6339,7 @@ A physics model entity that consists of a collection of physics attributes or co
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <discussion>Each spatial amount class has a subclass for spatial regions and a subclass for shape models. See Spatial entity for further discussion.
-
-Shape model amount properties represent cardinal spatial extents of shape models used to represent physical states of &apos;real&apos; anatomical entities. For example, the portion of blood in a ventricle has Fluid volume as a Dynamical state property which is identical to the Lumen volume of a Tank shape that is declared to represent a heart ventricle. Such an algebraic relation formally expresses the equality of a volume of a fluid portion with the volume of the vessel lumen that contains the fluid portion. Thus, shape model amounts are state properties of the entities for which they are analytical models.
-
-</discussion>
-        <rdfs:comment>An amount property that is a scalar or vectorial measure of the spatial extent, location, or shape of a spatial entity.</rdfs:comment>
+        <rdfs:comment>A physical property that is a scalar or vectorial measure of the spatial extent, location, or shape of a spatial entity.</rdfs:comment>
     </owl:Class>
     
 
@@ -6413,16 +6381,6 @@ Shape model amount properties represent cardinal spatial extents of shape models
     <owl:Class rdf:about="&OPB;OPB_01247">
         <rdfs:label xml:lang="en">Discrete value change event</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01105"/>
-    </owl:Class>
-    
-
-
-    <!-- http://bhi.washington.edu/OPB#OPB_01248 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01248">
-        <rdfs:label xml:lang="en">Volume of shape model</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_00523"/>
-        <rdfs:comment>A volume of space enclosed in a bounded 3-dimensional region of a shape model.</rdfs:comment>
     </owl:Class>
     
 
@@ -6539,24 +6497,6 @@ Shape model amount properties represent cardinal spatial extents of shape models
     
 
 
-    <!-- http://bhi.washington.edu/OPB#OPB_01260 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01260">
-        <rdfs:label xml:lang="en">Wall volume of shape</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01248"/>
-    </owl:Class>
-    
-
-
-    <!-- http://bhi.washington.edu/OPB#OPB_01261 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01261">
-        <rdfs:label xml:lang="en">Lumenal volume of shape</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01248"/>
-    </owl:Class>
-    
-
-
     <!-- http://bhi.washington.edu/OPB#OPB_01262 -->
 
     <owl:Class rdf:about="&OPB;OPB_01262">
@@ -6619,7 +6559,7 @@ Shape model amount properties represent cardinal spatial extents of shape models
     <!-- http://bhi.washington.edu/OPB#OPB_01269 -->
 
     <owl:Class rdf:about="&OPB;OPB_01269">
-        <rdfs:label xml:lang="en">Transverse span of spatial entity</rdfs:label>
+        <rdfs:label xml:lang="en">Transverse span</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01064"/>
         <rdfs:comment>A span of spatial entity that is straight-line distance between two points on the bounds of a spatial entity</rdfs:comment>
     </owl:Class>
@@ -6629,7 +6569,7 @@ Shape model amount properties represent cardinal spatial extents of shape models
     <!-- http://bhi.washington.edu/OPB#OPB_01270 -->
 
     <owl:Class rdf:about="&OPB;OPB_01270">
-        <rdfs:label xml:lang="en">Perimeter span of spatial entity</rdfs:label>
+        <rdfs:label xml:lang="en">Perimeter span</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01064"/>
         <rdfs:comment>A span of spatial entity that is the spatial distance along a path, straight or curved, that is within the boundary of a spatial entity from one point to itself or to another point.</rdfs:comment>
     </owl:Class>
@@ -7034,22 +6974,6 @@ formalized as SC:successor state axiom</discussion>
     
 
 
-    <!-- http://bhi.washington.edu/OPB#OPB_01309 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01309">
-        <rdfs:label xml:lang="en">Gas volume</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_00154"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01302"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- http://bhi.washington.edu/OPB#OPB_01310 -->
 
     <owl:Class rdf:about="&OPB;OPB_01310">
@@ -7172,22 +7096,6 @@ formalized as SC:successor state axiom</discussion>
     <owl:Class rdf:about="&OPB;OPB_01320">
         <rdfs:label>Weight of solid entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01288"/>
-    </owl:Class>
-    
-
-
-    <!-- http://bhi.washington.edu/OPB#OPB_01321 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01321">
-        <rdfs:label xml:lang="en">Liquid volume</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_00154"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01301"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -9146,7 +9054,7 @@ For example, a computation may calculate the radius of a spherical entity accord
                 <owl:someValuesFrom rdf:resource="&OPB;OPB_01011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Primitive entity that is a quantal electrical charge</rdfs:comment>
+        <rdfs:comment>Primitive physical entity that is a quantal electrical charge</rdfs:comment>
     </owl:Class>
     
 
@@ -9440,8 +9348,8 @@ For example, a computation may calculate the radius of a spherical entity accord
     <!-- http://bhi.washington.edu/OPB#OPB_01502 -->
 
     <owl:Class rdf:about="&OPB;OPB_01502">
-        <rdfs:label xml:lang="en">Constitutive property</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_00147"/>
+        <rdfs:label xml:lang="en">Dynamical constitutive property</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_00568"/>
         <discussion>Constitutive dynamical properties ultimately depend on an empirically determined material property (e.g., density, resistivity) of a participant in the process. For example, mass density depends on both the spatial distribution of atoms and the atomic weight of each. Resistance of a conductor depends on the resistivity of the material in the wire which is only defined and determinable empirically.
 
 Any other algebraic form of the dependency may have specifially-defined parameters (e.g., offsets, rate parameters). Given the creativity and license of modelers for creating the best fit to constitutive dependencies, the parameters of such non-proportional dependencies must be annotated by some local mechanism that does not depend on OPB classifications.
@@ -9451,8 +9359,8 @@ Constitutive proportionalities are approximations to dependencies for which a fi
 Non-proportionality constants include coefficients and parameters required to characterize linear and nonlinear dependencies that are not simple proportionalities. Some may constitutive dependencies may include dynamic modeling schemes with internal dynamic states (e.g., the &quot;gating variable&quot; of Hodgkin-Huxley ion gating equations). We will treat such properties as &quot;internal&quot; to the constitutive dependency, shielded from other entities in the system and known solely as hypothetical constructs derived as constitutively observed dynamic phenomena. Thus, HH gating variables will be classified as properties of constitutive dependencies which are also subclasses of Dynamical property without, however, declaring a Dynamical entity of which it is a property.
 
 Important to realize that MM params, HH params, etc. are all derived and asserted by virtue of curve-fits to the directly observed attributes of a system; number of gating particles and their respective states is entirely inferential by best fits and, so, are no more physically real than any other coefficient or parameter.</discussion>
-        <rdfs:comment>A physical property whose value depends on the material composition and spatial properties of a process participant.</rdfs:comment>
         <OPB_01068></OPB_01068>
+        <rdfs:comment>A dynamical property whose value depends on the material composition and spatial properties of a physical process or process participant.</rdfs:comment>
     </owl:Class>
     
 
@@ -11286,19 +11194,6 @@ More complete OPB support for cotransport will await the needs of suitable use-c
     
 
 
-    <!-- http://bhi.washington.edu/OPB#OPB_01643 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01643">
-        <rdfs:label xml:lang="en">Spatial property</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_00147"/>
-        <discussion>Representing spatial properties of physical continuants (e.g., the shape of a heart) and of their corresponding geometrical abstractions (e.g., a sphere) is a field of study beyond the scope of physical dynamics and will not be covered in detail here. Thus we distinguish the spatial properties of spatial entities from those of dyanmical entities whose attributes are OPB:Dynamical state property subclasses of OPB:Solid displacement and OPB:Spatial amount
-
-</discussion>
-        <rdfs:comment>A physical property that is a quantitative attribute of a spatial entity or is a spatial relation between entities</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://bhi.washington.edu/OPB#OPB_01644 -->
 
     <owl:Class rdf:about="&OPB;OPB_01644">
@@ -11465,9 +11360,9 @@ More complete OPB support for cotransport will await the needs of suitable use-c
     <!-- http://bhi.washington.edu/OPB#OPB_01659 -->
 
     <owl:Class rdf:about="&OPB;OPB_01659">
-        <rdfs:label xml:lang="en">Angle of spatial entity</rdfs:label>
+        <rdfs:label xml:lang="en">Spatial angle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01244"/>
-        <rdfs:comment>A spatial base amount that is required to superimpose two straight lines by rotation about an intersection of the lines</rdfs:comment>
+        <rdfs:comment>A spatial property that is the rotation required to superimpose two straight lines by rotation about an intersection of the lines</rdfs:comment>
     </owl:Class>
     
 
@@ -11514,13 +11409,6 @@ An ideal gas is a theoretical gas composed of many randomly moving point particl
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00154"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <discussion>from Wikipedia: Charle&apos;s law
 
   V/T = k
@@ -11544,13 +11432,6 @@ An ideal gas is a theoretical gas composed of many randomly moving point particl
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
                 <owl:onClass rdf:resource="&OPB;OPB_01706"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00154"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -11632,13 +11513,6 @@ where:
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00154"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>A gas law that relates the values of volume and amount of gas when its pressure and temperature are unchanged.</rdfs:comment>
         <discussion>From Wikipedia:Avogadro&apos;s Law
 
@@ -11682,13 +11556,6 @@ As temperature and pressure are constant, RT/P is also constant and represented 
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
                 <owl:onClass rdf:resource="&OPB;OPB_01710"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00154"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
