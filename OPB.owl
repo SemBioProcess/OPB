@@ -555,7 +555,7 @@ Note that: &quot;hasParticipant&quot; relates physical processes to physical ent
 
     <owl:ObjectProperty rdf:about="&OPB;OPB_00320">
         <rdfs:label>hasPhysicalDomain</rdfs:label>
-        <rdfs:comment>A topObjectProperty that relates an entity, property or dependency to a dynamical domain</rdfs:comment>
+        <rdfs:comment>A topObjectProperty that relates a physical property to the domain of the entity or dependency for which it is a property</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -712,7 +712,7 @@ Note that: &quot;hasParticipant&quot; relates physical processes to physical ent
     <owl:ObjectProperty rdf:about="&OPB;OPB_01342">
         <rdfs:label xml:lang="en">hasInfoParticipant - pending</rdfs:label>
         <rdfs:comment>A hasParticipant property that relates a flow of information to a dynamical entity that is either a source or sink for the flow</rdfs:comment>
-        <rdfs:subPropertyOf rdf:resource="&OPB;OPB_00049"/>
+        <rdfs:subPropertyOf rdf:resource="&OPB;OPB_00032"/>
     </owl:ObjectProperty>
     
 
@@ -1276,7 +1276,7 @@ The distinction between &quot;through&quot; and &quot;cross&quot; properties (va
 
     <owl:Class rdf:about="&OPB;OPB_00045">
         <rdfs:label>Event rate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01151"/>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_00400"/>
         <rdfs:comment rdf:datatype="&xsd;string">Temporal rate of aperiodic events during a temporal interval.</rdfs:comment>
         <OPB_00072>frequency</OPB_00072>
         <OPB_00072>event frequency</OPB_00072>
@@ -1571,7 +1571,7 @@ Important to realize that MM params, HH params, etc. are all derived and asserte
     <!-- http://bhi.washington.edu/OPB#OPB_00089 -->
 
     <owl:Class rdf:about="&OPB;OPB_00089">
-        <rdfs:label>Faraday constant</rdfs:label>
+        <rdfs:label xml:lang="en">Faraday constant</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_00019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1580,8 +1580,10 @@ Important to realize that MM params, HH params, etc. are all derived and asserte
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment rdf:datatype="&xsd;string">...is the amount of electric charge per mole of electrons;</rdfs:comment>
-        <classTerm rdf:datatype="&xsd;string">Faraday constant</classTerm>
+        <discussion>Faraday constant has the currently accepted value of 96485.3365(21) C mol−1 that is the product of the unit charge of an electron (1.6021766×10−19 C) and the Avogadro constant (NA ≈ 6.022141×1023 mol−1).</discussion>
+        <OPB_00103>https://en.wikipedia.org/wiki/Faraday_constant</OPB_00103>
+        <rdfs:comment>A physical constant that is the amount electric charge of a mole of electrons.</rdfs:comment>
+        <OPB_00072>F</OPB_00072>
     </owl:Class>
     
 
@@ -1828,6 +1830,16 @@ The representations of OPB:Information content and OPB:Statistical properties ar
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://bhi.washington.edu/OPB#OPB_00154 -->
+
+    <owl:Class rdf:about="&OPB;OPB_00154">
+        <rdfs:label xml:lang="en">Fluid volume</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_00135"/>
+        <rdfs:comment>An amount property that is the temporal integral of an fluid flow rate relative to an initial volume</rdfs:comment>
     </owl:Class>
     
 
@@ -2383,14 +2395,14 @@ In the interim, a bond is an abstraction that represents ONLY the energetics of 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_01261"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01187"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00013"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_01261"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00013"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01187"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2808,15 +2820,15 @@ An example of the quantitative property dependency is: E1 = nE2, and nF1 = F2, w
         <rdfs:subClassOf rdf:resource="&OPB;OPB_00147"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00062"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00116"/>
+                <owl:onProperty rdf:resource="&OPB;OPB_01016"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01362"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_01016"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01362"/>
+                <owl:onProperty rdf:resource="&OPB;OPB_00062"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00116"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2842,6 +2854,20 @@ An example of the quantitative property dependency is: E1 = nE2, and nF1 = F2, w
         <rdfs:subClassOf rdf:resource="&OPB;OPB_00353"/>
         <discussion>--- outsource this class to existing ontology??</discussion>
         <rdfs:comment>A property form that is the mathematical form of a property value</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bhi.washington.edu/OPB#OPB_00410 -->
+
+    <owl:Class rdf:about="&OPB;OPB_00410">
+        <rdfs:label xml:lang="en">Ideal gas constant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_01687"/>
+        <OPB_00072>R</OPB_00072>
+        <OPB_00072>gas constant</OPB_00072>
+        <discussion>The gas constant is the Boltzmann constant (k) times the number of moles of a gas (N) such that R = Nk.</discussion>
+        <rdfs:comment>A gas law constant for the ideal gas law. It is the increment in the total energy of a mole of matter due to an increment of temperature. </rdfs:comment>
+        <OPB_00072>universal gas law constant</OPB_00072>
     </owl:Class>
     
 
@@ -3189,18 +3215,9 @@ IUPAC. (2011). &quot;A concise summary of Quantities, Units and Symbols in Physi
     <!-- http://bhi.washington.edu/OPB#OPB_00506 -->
 
     <owl:Class rdf:about="&OPB;OPB_00506">
-        <rdfs:label>Electrodiffusional potential</rdfs:label>
+        <rdfs:label xml:lang="en">Electrical potential</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01364"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00211"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>A force property that drives the flux electrically-charged particles from one portion of particles to another according to the electrical charge and concentration of the particles.</rdfs:comment>
-        <discussion> Measured as the difference in electric potential between two points or the difference in electric potential energy per unit charge between two points.</discussion>
-        <OPB_00072>voltage</OPB_00072>
+        <rdfs:comment>Flow-driving potenrial that drives electrical charge through an electrically conducting medium.</rdfs:comment>
     </owl:Class>
     
 
@@ -3293,14 +3310,14 @@ IUPAC. (2011). &quot;A concise summary of Quantities, Units and Symbols in Physi
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00085"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00371"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00373"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00085"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00373"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00371"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3325,7 +3342,7 @@ To emphasize intent of the OPB as an ontology of analytical concepts, we have pu
 The OPB does not include quantum or relativistic physics, nor is it intended to recapitulate the axiomatic basis of physics as a theoretical framework. Whereas the foundational theory of the OPB encompasses both discrete systems analysis (using ordinary differential equations; ODEs) and continuum systems analysis (using partial differential equations; PDEs), the first version of the OPB is targeted solely to discrete systems analysis.
 
 </discussion>
-        <rdfs:comment>A physics entity that is a theoretical or computational representation that is useful for the scientific description and analysis of biodynamical entities and processes</rdfs:comment>
+        <rdfs:comment>A physics entity that is a theoretical or computational representation that is useful for the scientific description and analysis of physics real entities.</rdfs:comment>
     </owl:Class>
     
 
@@ -3451,15 +3468,15 @@ The OPB does not include quantum or relativistic physics, nor is it intended to 
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01282"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00062"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01615"/>
+                <owl:onProperty rdf:resource="&OPB;OPB_01016"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01350"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_01016"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01350"/>
+                <owl:onProperty rdf:resource="&OPB;OPB_00062"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01615"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3502,15 +3519,15 @@ The OPB does not include quantum or relativistic physics, nor is it intended to 
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01283"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_01402"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01362"/>
+                <owl:onProperty rdf:resource="&OPB;OPB_01401"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01586"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_01401"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01586"/>
+                <owl:onProperty rdf:resource="&OPB;OPB_01402"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01362"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3791,6 +3808,13 @@ The set of Shape model classes is quite sparse and are not intended to be exhaus
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00201"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
                 <owl:onClass rdf:resource="&OPB;OPB_00221"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
@@ -3802,15 +3826,8 @@ The set of Shape model classes is quite sparse and are not intended to be exhaus
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00201"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>An energy rate dependency that is the rate heat dissipated by a force resisting a dynamical flow.</rdfs:comment>
         <OPB_00072>Heat flow dependency</OPB_00072>
+        <rdfs:comment>An energy rate dependency of the heat dissipation rate generated by resistive forces acting on a dynamical flow.</rdfs:comment>
     </owl:Class>
     
 
@@ -4125,6 +4142,13 @@ Surface tension, usually represented by the symbol γ, is measured in forces per
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00574"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
                 <owl:onClass rdf:resource="&OPB;OPB_00573"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
@@ -4136,14 +4160,6 @@ Surface tension, usually represented by the symbol γ, is measured in forces per
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00574"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>An energy rate dependency that is the rate of energy flow that is the product of a flow rate and a potential energy difference.</rdfs:comment>
     </owl:Class>
     
 
@@ -4270,7 +4286,7 @@ Surface tension, usually represented by the symbol γ, is measured in forces per
 
     <owl:Class rdf:about="&OPB;OPB_01054">
         <rdfs:label>Structural state</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01285"/>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_01535"/>
         <rdfs:comment>A physical state that is the set of structural relations of a physical continuant to other continuants. </rdfs:comment>
     </owl:Class>
     
@@ -4280,7 +4296,7 @@ Surface tension, usually represented by the symbol γ, is measured in forces per
 
     <owl:Class rdf:about="&OPB;OPB_01055">
         <rdfs:label>Dynamical state</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01285"/>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_01535"/>
         <rdfs:comment>A physical state that is the set of values of the dynamical properties of a physical entity</rdfs:comment>
         <discussion>OPB:Dynamical state is intended to represent the global state of a physical entity as it exists at a moment in time which includes: 1) thermodynamic state including potential and kinetic energy components, 2) its spatial state as referenced to a coordinate system or to other physical entities with which it participates in physical processes, 3) its structural relations (e.g., parthood, adjacency, connection, etc.) with its own parts and the &quot;wholes&quot; of which it is a part, and other process participants, 4) its information content (e.g., information content of a DNA sequence), and 5) its ontological type or class as determined by st1-3. </discussion>
     </owl:Class>
@@ -4313,7 +4329,7 @@ Annotations of Property value classes are intended to formally distiguish proper
 
     <owl:Class rdf:about="&OPB;OPB_01058">
         <rdfs:label xml:lang="en">Membrane potential</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_00506"/>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_01169"/>
         <rdfs:comment>An electrical potential that exists across an electrodiffusion barrier such as a cell membrane.</rdfs:comment>
     </owl:Class>
     
@@ -4338,16 +4354,6 @@ Annotations of Property value classes are intended to formally distiguish proper
         <discussion>Occurrences of the class &lt;physical process event&gt; are discrete change in a process participant that occurs at an instant in time. Events serve to demarcate and define temporal boundaries (as in BFO:Process boundary) of the process occurrences. For example, the peak of the R-wave in an ECG could be taken to demarcate the beginning of ventricular systole.
 
 Clearly, no physical event is truly discrete as that implies a change of physical dynamical state that occurs instantaneously which implies an infinite rate of energy flux; clearly, an impossibility. </discussion>
-    </owl:Class>
-    
-
-
-    <!-- http://bhi.washington.edu/OPB#OPB_01061 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01061">
-        <rdfs:label xml:lang="en">Fluid volume</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_00135"/>
-        <rdfs:comment>An amount property that is the temporal integral of an fluid flow rate relative to an initial volume</rdfs:comment>
     </owl:Class>
     
 
@@ -4565,17 +4571,6 @@ Clearly, no physical event is truly discrete as that implies a change of physica
     
 
 
-    <!-- http://bhi.washington.edu/OPB#OPB_01083 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01083">
-        <rdfs:label xml:lang="en">Energy flow</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_00518"/>
-        <OPB_00072>energy bond</OPB_00072>
-        <rdfs:comment>A thermodynamic entity that is the transfer of thermodynamic energy from one portion of energy to another</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://bhi.washington.edu/OPB#OPB_01084 -->
 
     <owl:Class rdf:about="&OPB;OPB_01084">
@@ -4723,7 +4718,7 @@ Clearly, no physical event is truly discrete as that implies a change of physica
 
     <owl:Class rdf:about="&OPB;OPB_01095">
         <rdfs:label>Thermodynamical state</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01285"/>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_01535"/>
         <rdfs:comment>A physical state that is the set of values of one or more thermodynamical properties of a thermodynamical entity.</rdfs:comment>
     </owl:Class>
     
@@ -5012,8 +5007,14 @@ Gravitational mass is measured by comparing the force of gravity of an unknown m
     <!-- http://bhi.washington.edu/OPB#OPB_01121 -->
 
     <owl:Class rdf:about="&OPB;OPB_01121">
-        <rdfs:label xml:lang="en">Transmembrane charge amount</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_00411"/>
+        <rdfs:label>Physics condition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_01487"/>
+        <discussion>&apos;Physics conditon&apos; is intended to represent the physics concept of the &quot;state&quot; of a system in its broadest sense that comprehends all physical state variables (locations, energies, dynamic properties, etc.) as well as its  structural relations to its parts and other physical entities with which it is a physical process participant.
+
+As such it closely related to class term &quot;phenotype&quot; as defined in biomedical phenotype ontologies (e.g., PATO: Phenotype And Trait Ontology, HPO: Human Phenotype Ontology). However, &apos;state&apos; in OPB excludes psychological, genomic, evolutionary and other biological attributes except as measureable and quantifiable in terms of physical measures.. Thus, for the biomedical domain, OPB uses &quot;Physical state&quot; to comprehend the concepts of &quot;state&quot; and &quot;fluent&quot; as follows: 
+
+&quot;Physical state&quot; should also be synonymous with the concept of &quot;fluent&quot; (as in the situation calculus, the Process Specification Language, and OBO:Process Ontology) which is a changeable aspect of a system.</discussion>
+        <rdfs:comment>A physics attribute of a physics continuant that is composed of its ontological type, its structural relations to other physics continuants, and the values of its physical properties at a moment in time.</rdfs:comment>
     </owl:Class>
     
 
@@ -5216,15 +5217,6 @@ Gravitational mass is measured by comparing the force of gravity of an unknown m
     
 
 
-    <!-- http://bhi.washington.edu/OPB#OPB_01140 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01140">
-        <rdfs:label xml:lang="en">Solid energy flow dependency</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01038"/>
-    </owl:Class>
-    
-
-
     <!-- http://bhi.washington.edu/OPB#OPB_01142 -->
 
     <owl:Class rdf:about="&OPB;OPB_01142">
@@ -5256,11 +5248,9 @@ Gravitational mass is measured by comparing the force of gravity of an unknown m
     <!-- http://bhi.washington.edu/OPB#OPB_01145 -->
 
     <owl:Class rdf:about="&OPB;OPB_01145">
-        <rdfs:label xml:lang="en">Informational physics process</rdfs:label>
+        <rdfs:label xml:lang="en">Informational physics process - deferred</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01259"/>
-        <rdfs:comment>A physics process that is the transmission, transduction or transformation of information amongst process participants with negligible exchange of thermodynamic energy.
-
-REPRESENTATION DEFERRED </rdfs:comment>
+        <rdfs:comment>A physics process that is the transmission, transduction or transformation of information amongst process participants with negligible exchange of thermodynamic energy.</rdfs:comment>
     </owl:Class>
     
 
@@ -5308,16 +5298,6 @@ REPRESENTATION DEFERRED </rdfs:comment>
         <rdfs:label xml:lang="en">Lineal shear stress</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01125"/>
         <rdfs:comment>A shear stress that is the amount of force acting in the along a line spatial region normalized to the length of the line.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://bhi.washington.edu/OPB#OPB_01151 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01151">
-        <rdfs:label xml:lang="en">Temporal property of event trajectory</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_00400"/>
-        <rdfs:comment>A temporal property that is the number physics events that occur during a temporal interval.</rdfs:comment>
     </owl:Class>
     
 
@@ -5511,9 +5491,18 @@ REPRESENTATION DEFERRED </rdfs:comment>
     <!-- http://bhi.washington.edu/OPB#OPB_01169 -->
 
     <owl:Class rdf:about="&OPB;OPB_01169">
-        <rdfs:label xml:lang="en">Electrical potential</rdfs:label>
+        <rdfs:label>Electrodiffusional potential</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01364"/>
-        <rdfs:comment>Flow-driving potenrial that drives electrical charge through an electrically conducting medium.</rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00211"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A force property that drives the flux electrically-charged particles from one portion of particles to another according to the electrical charge and concentration of the particles.</rdfs:comment>
+        <OPB_00072>voltage</OPB_00072>
+        <discussion> Measured as the difference in electric potential between two points or the difference in electric potential energy per unit charge between two points.</discussion>
     </owl:Class>
     
 
@@ -5548,9 +5537,9 @@ REPRESENTATION DEFERRED </rdfs:comment>
     <!-- http://bhi.washington.edu/OPB#OPB_01173 -->
 
     <owl:Class rdf:about="&OPB;OPB_01173">
-        <rdfs:label xml:lang="en">Temporal integrative</rdfs:label>
+        <rdfs:label xml:lang="en">Temporal integrative constraint</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01034"/>
-        <rdfs:comment>A temporal calculus constraint that is the temporal intergral of a dynamical rate property.</rdfs:comment>
+        <rdfs:comment>A temporal calculus dependency that is the temporal rate of change of a property value.</rdfs:comment>
     </owl:Class>
     
 
@@ -5623,9 +5612,9 @@ REPRESENTATION DEFERRED </rdfs:comment>
     <!-- http://bhi.washington.edu/OPB#OPB_01180 -->
 
     <owl:Class rdf:about="&OPB;OPB_01180">
-        <rdfs:label xml:lang="en">Temporal derivative</rdfs:label>
+        <rdfs:label xml:lang="en">Temporal derivative constraint</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01034"/>
-        <rdfs:comment>A temporal calculus constraint that is the temporal derivative of a  dynamical state property.</rdfs:comment>
+        <rdfs:comment>A temporal calculus dependency that is the temporal rate of change of a property value.</rdfs:comment>
     </owl:Class>
     
 
@@ -5736,7 +5725,6 @@ REPRESENTATION DEFERRED </rdfs:comment>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Energy dissipation dependency in the electrical domain.</rdfs:comment>
     </owl:Class>
     
 
@@ -5972,7 +5960,7 @@ REPRESENTATION DEFERRED </rdfs:comment>
 
     <owl:Class rdf:about="&OPB;OPB_01212">
         <rdfs:label xml:lang="en">Event frequency</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01151"/>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_00400"/>
         <rdfs:comment>Temporal rate of periodic events during a temporal interval.</rdfs:comment>
     </owl:Class>
     
@@ -6353,7 +6341,6 @@ REPRESENTATION DEFERRED </rdfs:comment>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Energy dissipation dependency in the fluid kinetic domain.</rdfs:comment>
     </owl:Class>
     
 
@@ -6363,15 +6350,6 @@ REPRESENTATION DEFERRED </rdfs:comment>
     <owl:Class rdf:about="&OPB;OPB_01247">
         <rdfs:label xml:lang="en">Portion of negative charge</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_00443"/>
-    </owl:Class>
-    
-
-
-    <!-- http://bhi.washington.edu/OPB#OPB_01248 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01248">
-        <rdfs:label xml:lang="en">Scaled-to-maximal value</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01236"/>
     </owl:Class>
     
 
@@ -6591,7 +6569,7 @@ REPRESENTATION DEFERRED </rdfs:comment>
 
     <owl:Class rdf:about="&OPB;OPB_01271">
         <rdfs:label xml:lang="en">Reversal potential</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_00506"/>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_01169"/>
         <discussion>Here we distinguish two subclasses of membrane reversal potential that account for either 
 
 (1) the &quot;Nernst potenial&quot; for a single ionic species whether or not it permeates the membrane as calculated by the Nernst equation that has terms the ratio of inner-to-outer ion concentrations (e.g., [Nai] / [Nao]) but no term of ionic permebility. That is, Nernst potentials are function only of the ion gradient (as a ratio) and not of ion permeability according to the Nernst equation. Thus, a Nernst reversal potential (for a single ion) can only be measured empirically under strict equilibrium conditions where membranes are permeable only to ions and there are no transmembrane ion currents, as from electrogenicl pumps.
@@ -6730,35 +6708,6 @@ http://www.physiologyweb.com/lecture_notes/resting_membrane_potential/resting_me
     
 
 
-    <!-- http://bhi.washington.edu/OPB#OPB_01285 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01285">
-        <rdfs:label xml:lang="en">Physical state component</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01535"/>
-    </owl:Class>
-    
-
-
-    <!-- http://bhi.washington.edu/OPB#OPB_01286 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01286">
-        <rdfs:label xml:lang="en">Charge areal density</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01645"/>
-        <rdfs:comment>Amount of electrical charge per unit area</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://bhi.washington.edu/OPB#OPB_01287 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01287">
-        <rdfs:label xml:lang="en">Charge lineal density</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01645"/>
-        <rdfs:comment>Amount of electrical charge per unit length</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://bhi.washington.edu/OPB#OPB_01288 -->
 
     <owl:Class rdf:about="&OPB;OPB_01288">
@@ -6879,7 +6828,6 @@ formalized as SC:successor state axiom</discussion>
     <owl:Class rdf:about="&OPB;OPB_01298">
         <rdfs:label xml:lang="en">State fraction of chemical</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01385"/>
-        <rdfs:comment>A fractional amount of chemical that is the ratio of the molar concentration of a portion of chemical in particular conformational state to the total amount of the chemical.</rdfs:comment>
     </owl:Class>
     
 
@@ -6953,7 +6901,6 @@ formalized as SC:successor state axiom</discussion>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Energy dissipation dependency in the solid mechanical domain.</rdfs:comment>
     </owl:Class>
     
 
@@ -7157,6 +7104,16 @@ formalized as SC:successor state axiom</discussion>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A material amount of a portion of liquid</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bhi.washington.edu/OPB#OPB_01323 -->
+
+    <owl:Class rdf:about="&OPB;OPB_01323">
+        <rdfs:label xml:lang="en">Hybrid physics graph model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_01321"/>
+        <rdfs:comment>A physics model composed of portions of physics graph models that share nodes and arcs. </rdfs:comment>
     </owl:Class>
     
 
@@ -7420,16 +7377,16 @@ The International System of Quantities (ISQ) is a system based on seven base qua
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_01402"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01362"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onProperty rdf:resource="&OPB;OPB_01401"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01353"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_01401"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01353"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onProperty rdf:resource="&OPB;OPB_01402"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01362"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A derived SI-unit for force or weight</rdfs:comment>
@@ -7675,7 +7632,7 @@ The International System of Quantities (ISQ) is a system based on seven base qua
 
     <owl:Class rdf:about="&OPB;OPB_01366">
         <rdfs:label xml:lang="en">Liquid junction potential</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_00506"/>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_01169"/>
         <rdfs:comment>An electrodiffusional potential across a diffusional barrier due to differences in diffusional mobility of anions and cations in the fluids separated by the barrier.</rdfs:comment>
         <discussion>Wikipedia: Liquid junction potential http://en.wikipedia.org/w/index.php?title=Liquid_junction_potential&amp;redirect=no</discussion>
     </owl:Class>
@@ -7687,7 +7644,7 @@ The International System of Quantities (ISQ) is a system based on seven base qua
     <owl:Class rdf:about="&OPB;OPB_01367">
         <rdfs:label>Physics processual entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01165"/>
-        <rdfs:comment>A physics real entity that is a physics process, change, or dependency, or a temporal entity.</rdfs:comment>
+        <rdfs:comment>A physics real entity that is a physical process or change, or a temporal entity.</rdfs:comment>
     </owl:Class>
     
 
@@ -7862,10 +7819,10 @@ The International System of Quantities (ISQ) is a system based on seven base qua
     <!-- http://bhi.washington.edu/OPB#OPB_01387 -->
 
     <owl:Class rdf:about="&OPB;OPB_01387">
-        <rdfs:label xml:lang="en">Process pre-state</rdfs:label>
+        <rdfs:label xml:lang="en">Process pre-condition</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01435"/>
         <discussion>A process precondition is a concept in the situation calculus. A precondition is a necessary and sufficient condition of the participants for initiating an occurence of a process</discussion>
-        <rdfs:comment>A process occurrence state that is necessary and sufficient to initiate an occurrence of a physical process</rdfs:comment>
+        <rdfs:comment>A process occurrence condition that is necessary and sufficient to initiate an occurrence of a physical process</rdfs:comment>
     </owl:Class>
     
 
@@ -7873,10 +7830,10 @@ The International System of Quantities (ISQ) is a system based on seven base qua
     <!-- http://bhi.washington.edu/OPB#OPB_01388 -->
 
     <owl:Class rdf:about="&OPB;OPB_01388">
-        <rdfs:label xml:lang="en">Process post-state</rdfs:label>
+        <rdfs:label xml:lang="en">Process post-condition</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01435"/>
+        <rdfs:comment>A process occurrence condition that terminates a physical process.</rdfs:comment>
         <discussion>A process postcondition is a concept in the situation calculus. A postcondition is the condition of the participants for at the end of an occurence of a process</discussion>
-        <rdfs:comment>A process occurrence state that terminates a physical process.</rdfs:comment>
     </owl:Class>
     
 
@@ -7895,7 +7852,7 @@ The International System of Quantities (ISQ) is a system based on seven base qua
 
     <owl:Class rdf:about="&OPB;OPB_01391">
         <rdfs:label xml:lang="en">Physics dependency</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01367"/>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_00528"/>
         <rdfs:comment>Physics model entity that is a rule that relates the existence and attributes of physics continuants to the occurrence and time-course of changes of physical conditions during physical processes.</rdfs:comment>
         <discussion>Physical dependencies are represented as an axioms, definitions and empirical laws of physics for the observation, understanding, and analysis of real biophysical systems. They are represented by a broad class of quantitative and qualitative relationships amongst physical entities and the attributes of physical entities, physical continuants, and physical processes. These are the rules by which dynamical and information systems operate and are routinely encoded for analysis and simulation in a variety of computational and mathematical systems.
 
@@ -8108,7 +8065,7 @@ For example, a computation may calculate the radius of a spherical entity accord
     <owl:Class rdf:about="&OPB;OPB_01412">
         <rdfs:label xml:lang="en">Material volumetric density</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01411"/>
-        <rdfs:comment>Amount of material per unit volume</rdfs:comment>
+        <rdfs:comment>A material density expressed per unit volume</rdfs:comment>
         <OPB_01068>PATO:0001353</OPB_01068>
     </owl:Class>
     
@@ -8121,16 +8078,9 @@ For example, a computation may calculate the radius of a spherical entity accord
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01377"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_01401"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01353"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_01402"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01373"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="&OPB;OPB_01362"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -8142,9 +8092,16 @@ For example, a computation may calculate the radius of a spherical entity accord
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_01401"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01353"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_01402"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01362"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="&OPB;OPB_01373"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A derived SI-unit for electrical potential difference, voltage, or electromotive force</rdfs:comment>
@@ -8167,6 +8124,13 @@ For example, a computation may calculate the radius of a spherical entity accord
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_01401"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01373"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_01401"/>
                 <owl:onClass rdf:resource="&OPB;OPB_01362"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">4</owl:qualifiedCardinality>
             </owl:Restriction>
@@ -8176,13 +8140,6 @@ For example, a computation may calculate the radius of a spherical entity accord
                 <owl:onProperty rdf:resource="&OPB;OPB_01402"/>
                 <owl:onClass rdf:resource="&OPB;OPB_01353"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_01401"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01373"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A derived SI-unit for electrical capacitance</rdfs:comment>
@@ -8204,9 +8161,9 @@ For example, a computation may calculate the radius of a spherical entity accord
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_01402"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01362"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:qualifiedCardinality>
+                <owl:onProperty rdf:resource="&OPB;OPB_01401"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01351"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -8218,9 +8175,9 @@ For example, a computation may calculate the radius of a spherical entity accord
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_01401"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01351"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onProperty rdf:resource="&OPB;OPB_01402"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01362"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A derived SI-unit for elctrical resistance, impedance, reactance</rdfs:comment>
@@ -8242,6 +8199,13 @@ For example, a computation may calculate the radius of a spherical entity accord
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_01401"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01373"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_01402"/>
                 <owl:onClass rdf:resource="&OPB;OPB_01351"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
@@ -8252,13 +8216,6 @@ For example, a computation may calculate the radius of a spherical entity accord
                 <owl:onProperty rdf:resource="&OPB;OPB_01402"/>
                 <owl:onClass rdf:resource="&OPB;OPB_01353"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_01401"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01373"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A derived SI-unit for electrical conductance</rdfs:comment>
@@ -8318,9 +8275,9 @@ For example, a computation may calculate the radius of a spherical entity accord
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01377"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_01402"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01362"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onProperty rdf:resource="&OPB;OPB_01401"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01353"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -8339,9 +8296,9 @@ For example, a computation may calculate the radius of a spherical entity accord
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_01401"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01353"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onProperty rdf:resource="&OPB;OPB_01402"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01362"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A derived SI-unit for magnetic flux</rdfs:comment>
@@ -8422,6 +8379,13 @@ For example, a computation may calculate the radius of a spherical entity accord
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_01402"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01362"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_01402"/>
                 <owl:onClass rdf:resource="&OPB;OPB_01373"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
@@ -8431,13 +8395,6 @@ For example, a computation may calculate the radius of a spherical entity accord
                 <owl:onProperty rdf:resource="&OPB;OPB_01401"/>
                 <owl:onClass rdf:resource="&OPB;OPB_01353"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_01402"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01362"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A derived SI-unit for magnetic flux density</rdfs:comment>
@@ -8452,6 +8409,13 @@ For example, a computation may calculate the radius of a spherical entity accord
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01377"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_01402"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01362"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_01401"/>
                 <owl:onClass rdf:resource="&OPB;OPB_01351"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
@@ -8462,13 +8426,6 @@ For example, a computation may calculate the radius of a spherical entity accord
                 <owl:onProperty rdf:resource="&OPB;OPB_01401"/>
                 <owl:onClass rdf:resource="&OPB;OPB_01353"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_01402"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01362"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -8488,7 +8445,7 @@ For example, a computation may calculate the radius of a spherical entity accord
     <owl:Class rdf:about="&OPB;OPB_01433">
         <rdfs:label xml:lang="en">Material areal density</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01411"/>
-        <rdfs:comment>Amount of material per unit area</rdfs:comment>
+        <rdfs:comment>A material density expressed per unit area</rdfs:comment>
         <OPB_01068>PATO:0001351</OPB_01068>
     </owl:Class>
     
@@ -8506,9 +8463,9 @@ For example, a computation may calculate the radius of a spherical entity accord
     <!-- http://bhi.washington.edu/OPB#OPB_01435 -->
 
     <owl:Class rdf:about="&OPB;OPB_01435">
-        <rdfs:label xml:lang="en">Process occurrence state</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01535"/>
-        <rdfs:comment>A physical state of a physical pocess participant at the start or end of a process.</rdfs:comment>
+        <rdfs:label xml:lang="en">Process occurrence condition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_01121"/>
+        <rdfs:comment>A physical condition of a physical pocess participant at the start or end ofthe process.</rdfs:comment>
     </owl:Class>
     
 
@@ -8687,7 +8644,7 @@ For example, a computation may calculate the radius of a spherical entity accord
         <rdfs:label xml:lang="en">Material lineal density</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01411"/>
         <OPB_01068>PATO:0001352</OPB_01068>
-        <rdfs:comment>Amount of material per unit length</rdfs:comment>
+        <rdfs:comment>A material density expressed per unit length</rdfs:comment>
     </owl:Class>
     
 
@@ -8798,15 +8755,15 @@ For example, a computation may calculate the radius of a spherical entity accord
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01377"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_01402"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01362"/>
+                <owl:onProperty rdf:resource="&OPB;OPB_01401"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01374"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_01401"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01374"/>
+                <owl:onProperty rdf:resource="&OPB;OPB_01402"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01362"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9004,13 +8961,13 @@ For example, a computation may calculate the radius of a spherical entity accord
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_00211"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_01011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_01011"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_00211"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Primitive physical entity that is a quantal electrical charge</rdfs:comment>
@@ -9142,7 +9099,7 @@ For example, a computation may calculate the radius of a spherical entity accord
     <owl:Class rdf:about="&OPB;OPB_01487">
         <rdfs:label xml:lang="en">Physics attribute</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01165"/>
-        <rdfs:comment>Physics real entity that is a physically observable attribute of a physics continuant or processural entity.</rdfs:comment>
+        <rdfs:comment>Physics real entity that is a physically observable attribute of a physics continuant, dependency or processural entity.</rdfs:comment>
     </owl:Class>
     
 
@@ -9300,7 +9257,7 @@ For example, a computation may calculate the radius of a spherical entity accord
 
     <owl:Class rdf:about="&OPB;OPB_01502">
         <rdfs:label xml:lang="en">Dynamical constitutive property</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_00147"/>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_00568"/>
         <OPB_01068></OPB_01068>
         <discussion>Constitutive dynamical properties ultimately depend on an empirically determined material property (e.g., density, resistivity) of a participant in the process. For example, mass density depends on both the spatial distribution of atoms and the atomic weight of each. Resistance of a conductor depends on the resistivity of the material in the wire which is only defined and determinable empirically.
 
@@ -9493,14 +9450,14 @@ Important to realize that MM params, HH params, etc. are all derived and asserte
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00574"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00135"/>
                 <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00135"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00574"/>
                 <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9522,14 +9479,14 @@ All capacitive dependencies relate a force (or force differential) to an amount 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00573"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00480"/>
                 <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00480"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00573"/>
                 <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9744,8 +9701,8 @@ Kinetic boundaries disinguish, say, a portion of glucose and a portion of G6P th
 
     <owl:Class rdf:about="&OPB;OPB_01535">
         <rdfs:label xml:lang="en">Physical state</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01487"/>
-        <rdfs:comment>A physics attribute that is the dynamical, structural and thermodynamical state of a physical entity at a moment in  time.</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_01121"/>
+        <rdfs:comment>A physical condition that that is the dynamical, structural and thermodynamical state of a physical entity at a moment in  time.</rdfs:comment>
     </owl:Class>
     
 
@@ -9793,6 +9750,13 @@ Kinetic boundaries disinguish, say, a portion of glucose and a portion of G6P th
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01339"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_00063"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00135"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
                 <owl:onClass rdf:resource="&OPB;OPB_01296"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -9801,13 +9765,6 @@ Kinetic boundaries disinguish, say, a portion of glucose and a portion of G6P th
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00135"/>
-                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00063"/>
                 <owl:onClass rdf:resource="&OPB;OPB_00135"/>
                 <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
             </owl:Restriction>
@@ -9938,14 +9895,14 @@ For both mass-action chemical rate laws and Fick diffusion equations the cross-p
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00380"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00195"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00195"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00380"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10415,7 +10372,7 @@ All resistive dependencies relate a force (or force differential) to a flow-rate
 
     <owl:Class rdf:about="&OPB;OPB_01580">
         <rdfs:label xml:lang="en">Physics model set</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01321"/>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_00464"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
@@ -10494,15 +10451,15 @@ mathematical, logical or computational construct that is useful for the represen
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01377"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_01401"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01350"/>
+                <owl:onProperty rdf:resource="&OPB;OPB_01402"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01354"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_01402"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01354"/>
+                <owl:onProperty rdf:resource="&OPB;OPB_01401"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01350"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10546,7 +10503,7 @@ mathematical, logical or computational construct that is useful for the represen
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00083"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00573"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10560,7 +10517,7 @@ mathematical, logical or computational construct that is useful for the represen
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00573"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00083"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10866,19 +10823,18 @@ http://www.unitsofmeasurement.org/apidocs/index.html</OPB_00072>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01488"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00473"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
                 <owl:onClass rdf:resource="&OPB;OPB_00201"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Energy rate dependency that is flow rate of heat energy driven by a temperature gradient.</rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00473"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -11006,19 +10962,6 @@ http://www.unitsofmeasurement.org/apidocs/index.html
     
 
 
-    <!-- http://bhi.washington.edu/OPB#OPB_01623 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01623">
-        <rdfs:label xml:lang="en">Faraday constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01621"/>
-        <OPB_00103>https://en.wikipedia.org/wiki/Faraday_constant</OPB_00103>
-        <OPB_00072>F</OPB_00072>
-        <rdfs:comment>A physical constant that is the amount electric charge of a mole of electrons.</rdfs:comment>
-        <discussion>Faraday constant has the currently accepted value of 96485.3365(21) C mol−1 that is the product of the unit charge of an electron (1.6021766×10−19 C) and the Avogadro constant (NA ≈ 6.022141×1023 mol−1).</discussion>
-    </owl:Class>
-    
-
-
     <!-- http://bhi.washington.edu/OPB#OPB_01624 -->
 
     <owl:Class rdf:about="&OPB;OPB_01624">
@@ -11047,22 +10990,6 @@ The accepted value in SI units is 1.3806488(13)×10−23 J/K.</discussion>
         <OPB_00103>https://en.wikipedia.org/wiki/Boltzmann_constant</OPB_00103>
         <rdfs:comment>A physical constant that is the ratio of the energy of a particle to its temperature.</rdfs:comment>
         <OPB_00072>k</OPB_00072>
-    </owl:Class>
-    
-
-
-    <!-- http://bhi.washington.edu/OPB#OPB_01626 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01626">
-        <rdfs:label xml:lang="en">Gas constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01621"/>
-        <OPB_00072>universal gas constant</OPB_00072>
-        <rdfs:comment>A physical constant that is the increment in the total energy of a mole of matter due to an increment of temperature. </rdfs:comment>
-        <OPB_00072>R</OPB_00072>
-        <OPB_00103>https://en.wikipedia.org/wiki/Gas_constant</OPB_00103>
-        <discussion>The gas constant is the Boltzmann constant (k) times the number of moles of a gas (N) such that R = Nk.</discussion>
-        <OPB_00072>molar gas constant</OPB_00072>
-        <OPB_00072>ideal gas constant</OPB_00072>
     </owl:Class>
     
 
@@ -11325,6 +11252,52 @@ More complete OPB support for cotransport will await the needs of suitable use-c
     
 
 
+    <!-- http://bhi.washington.edu/OPB#OPB_01651 -->
+
+    <owl:Class rdf:about="&OPB;OPB_01651">
+        <rdfs:label xml:lang="en">Entropy-driven heat flow</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_01612"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_00063"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00293"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00100"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://bhi.washington.edu/OPB#OPB_01652 -->
+
+    <owl:Class rdf:about="&OPB;OPB_01652">
+        <rdfs:label xml:lang="en">Temperature-driven heat flow</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OPB;OPB_01612"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00293"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_00063"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00293"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://bhi.washington.edu/OPB#OPB_01654 -->
 
     <owl:Class rdf:about="&OPB;OPB_01654">
@@ -11484,14 +11457,14 @@ An ideal gas is a theoretical gas composed of many randomly moving point particl
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
-                <owl:onClass rdf:resource="&OPB;OPB_00509"/>
+                <owl:onClass rdf:resource="&OPB;OPB_01706"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01706"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00509"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -11594,7 +11567,7 @@ As temperature and pressure are constant, RT/P is also constant and represented 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00102"/>
-                <owl:onClass rdf:resource="&OPB;OPB_01705"/>
+                <owl:onClass rdf:resource="&OPB;OPB_00410"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -11814,25 +11787,12 @@ despite copy/pasting  &apos;Temperature&apos;  from its class definition box.
     
 
 
-    <!-- http://bhi.washington.edu/OPB#OPB_01705 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01705">
-        <rdfs:label xml:lang="en">Ideal gas constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01687"/>
-        <OPB_00072>R</OPB_00072>
-        <OPB_00072>universal gas law constant</OPB_00072>
-        <rdfs:comment>A gas law constant for the ideal gas law</rdfs:comment>
-        <OPB_00072>gas constant</OPB_00072>
-    </owl:Class>
-    
-
-
     <!-- http://bhi.washington.edu/OPB#OPB_01706 -->
 
     <owl:Class rdf:about="&OPB;OPB_01706">
         <rdfs:label xml:lang="en">Boyle gas constant</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01687"/>
-        <rdfs:comment>A gas law constant for the Boyle&apos;s gas law</rdfs:comment>
+        <rdfs:comment>A gas law constant for Boyle&apos;s gas law</rdfs:comment>
     </owl:Class>
     
 
@@ -11842,7 +11802,7 @@ despite copy/pasting  &apos;Temperature&apos;  from its class definition box.
     <owl:Class rdf:about="&OPB;OPB_01707">
         <rdfs:label xml:lang="en">Avogadro gas constant</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OPB;OPB_01687"/>
-        <rdfs:comment>A gas law constant for the Avogadro&apos;s gas law</rdfs:comment>
+        <rdfs:comment>A gas law constant for Avogadro&apos;s gas law</rdfs:comment>
     </owl:Class>
     
 
@@ -11970,13 +11930,13 @@ despite copy/pasting  &apos;Temperature&apos;  from its class definition box.
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_00195"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_00380"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00320"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_00380"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_00195"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -12028,21 +11988,21 @@ despite copy/pasting  &apos;Temperature&apos;  from its class definition box.
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
-                <owl:someValuesFrom rdf:resource="&OPB;OPB_00221"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:onProperty rdf:resource="&OPB;OPB_00063"/>
-        <owl:someValuesFrom rdf:resource="&OPB;OPB_00041"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
                 <owl:someValuesFrom rdf:resource="&OPB;OPB_00041"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:onProperty rdf:resource="&OPB;OPB_00063"/>
         <owl:someValuesFrom rdf:resource="&OPB;OPB_00221"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OPB;OPB_00098"/>
+                <owl:someValuesFrom rdf:resource="&OPB;OPB_00221"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:onProperty rdf:resource="&OPB;OPB_00063"/>
+        <owl:someValuesFrom rdf:resource="&OPB;OPB_00041"/>
     </owl:Restriction>
 </rdf:RDF>
 
