@@ -11239,24 +11239,6 @@ More complete OPB support for cotransport will await the needs of suitable use-c
     
 
 
-    <!-- http://bhi.washington.edu/OPB#OPB_01661 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01661">
-        <rdfs:label xml:lang="en">Transport physics process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01662"/>
-    </owl:Class>
-    
-
-
-    <!-- http://bhi.washington.edu/OPB#OPB_01662 -->
-
-    <owl:Class rdf:about="&OPB;OPB_01662">
-        <rdfs:label xml:lang="en">Discrete-state physics process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OPB;OPB_01660"/>
-    </owl:Class>
-    
-
-
     <!-- http://bhi.washington.edu/OPB#OPB_01663 -->
 
     <owl:Class rdf:about="&OPB;OPB_01663">
