@@ -1,0 +1,14 @@
+
+For each OPB editting session
+
+1. Start gitHub, gitHub.Pull to download latest OPB version to OPBgit folder
+
+	2. Protege.Open(OPBgit.OPB.owl)
+
+	3. edit in Protege
+
+	4. Protege.Save( OPBgit.OPB ), close Protege
+
+5. gitHUB.Commit changes to master on gitHub
+
+6. gitHUB.Push to upload 

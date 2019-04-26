@@ -4759,7 +4759,7 @@ https://en.wikipedia.org/wiki/Osmotic_pressure </discussion>
     <!-- http://bhi.washington.edu/OPB#OPB_01100 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01100">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00528"/>
+        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00147"/>
         <rdfs:comment>Physics model entity that is the numerical value, measurement dimension or unit, or the mathematical form of a physics property.</rdfs:comment>
         <rdfs:label>Physics property attribute</rdfs:label>
     </owl:Class>
@@ -4971,7 +4971,7 @@ Gravitational mass is measured by comparing the force of gravity of an unknown m
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00528"/>
         <discussion>Physics continuants are portions of primitive physics entites that may be spatially-bounded (e.g, a heart, a portion of blood, a cell&apos;s cytoplasmic  sodium ions) or may be spatially-unbounded (e.g., an electrical field or gravitational potential field).</discussion>
         <rdfs:comment>A physics entity that is composed of portions of physics primitives.</rdfs:comment>
-        <rdfs:label>Physics analytical continuant</rdfs:label>
+        <rdfs:label>Physics thing</rdfs:label>
     </owl:Class>
     
 
@@ -8505,10 +8505,10 @@ For example, a computation may calculate the radius of a spherical entity accord
     <!-- http://bhi.washington.edu/OPB#OPB_01442 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01442">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00528"/>
+        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01118"/>
         <discussion>Primitive physics entity classes serve as &quot;mass nouns&quot; for the stuff of physical analysis.</discussion>
         <rdfs:comment>A physics entity that is a portion or instance of a material or immaterial part of reality that is so basic to our understanding that it cannot be defined in a non-circular manner.</rdfs:comment>
-        <rdfs:label xml:lang="en">Physics primitive</rdfs:label>
+        <rdfs:label xml:lang="en">Primitive thing</rdfs:label>
     </owl:Class>
     
 
