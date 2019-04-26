@@ -8505,7 +8505,7 @@ For example, a computation may calculate the radius of a spherical entity accord
     <!-- http://bhi.washington.edu/OPB#OPB_01442 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01442">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01118"/>
+        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00528"/>
         <discussion>Primitive physics entity classes serve as &quot;mass nouns&quot; for the stuff of physical analysis.</discussion>
         <rdfs:comment>A physics entity that is a portion or instance of a material or immaterial part of reality that is so basic to our understanding that it cannot be defined in a non-circular manner.</rdfs:comment>
         <rdfs:label xml:lang="en">Primitive thing</rdfs:label>
