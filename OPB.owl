@@ -3591,7 +3591,7 @@ State properties are termed &quot;across&quot; or  &quot;cross&quot; variables t
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00237"/>
         <OPB_00072>molar flow</OPB_00072>
         <OPB_00072>molar flow rate</OPB_00072>
-        <rdfs:comment>Chemical flow rate measured in concentration per unit time; moles/s</rdfs:comment>
+        <rdfs:comment>Chemical flow rate measured in number of molecules per unit time; moles/s</rdfs:comment>
         <rdfs:label>Chemical molar flow rate</rdfs:label>
     </owl:Class>
     
