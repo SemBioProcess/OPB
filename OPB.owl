@@ -5195,13 +5195,13 @@ As such it closely related to class term &quot;phenotype&quot; as defined in bio
     <!-- http://bhi.washington.edu/OPB#OPB_01151 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01151">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01391"/>
-        <rdfs:comment>A physics dependency that is a mathematical representation of a theory, hypothesis, or explanation that describes the physical interactions, property values, and temporal changes amongst a set of physics continuants and the physics processes in which they participate. 
+        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00528"/>
+        <rdfs:comment>A physics entity that representation of a theory, hypothesis, or explanation that describes the physical interactions, property values, and temporal changes amongst a set of physics continuants and the physics processes in which they participate. 
 
 A physics model may be when expressed verbally, graphically, or computationally may be reprentable as a subclass in the OBO Information Artefact Ontology (IAO).
 
-Instances of Physics Model class are intended to be used to annotate or describe the mathematical representations of parts or entirety of computational representations of physics continuants, dependencies, and processurals, in part or as a whole.</rdfs:comment>
-        <rdfs:label xml:lang="en">Physics math model</rdfs:label>
+Instances of Physics Model class are intended as annotation to describe the mathematical representations of parts or entirety of computational representations of physics continuants, dependencies, and processurals, in part, or as a whole.</rdfs:comment>
+        <rdfs:label xml:lang="en">Physics model</rdfs:label>
     </owl:Class>
     
 
