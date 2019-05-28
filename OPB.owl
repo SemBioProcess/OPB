@@ -1457,7 +1457,7 @@ Important to realize that MM params, HH params, etc. are all derived and asserte
                 <owl:onClass rdf:resource="http://bhi.washington.edu/OPB#OPB_00278"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A physical property that is an attribute of a portion, flow or distribution of thermodynamic energy or entropy.</rdfs:comment>
+        <rdfs:comment>A physics quality that is an attribute of a portion, flow or distribution of thermodynamic energy or entropy.</rdfs:comment>
         <rdfs:label>Thermodynamical property</rdfs:label>
     </owl:Class>
     
@@ -1767,13 +1767,13 @@ IUPAC. (2011). &quot;A concise summary of Quantities, Units and Symbols in Physi
     <!-- http://bhi.washington.edu/OPB#OPB_00147 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_00147">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01118"/>
+        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01442"/>
         <OPB_00097>http://goldbook.iupac.org/list_goldbook_quantities_defs_A.html</OPB_00097>
         <discussion>Physical properties classes are categorized according to the analytical domain in which they have meaning. For example, OPB:Dynamical properties apply to the domain of dynamical systems for which the concepts of thermodynamics have meaning, whereas OPB:Spatial properties apply to spatial and geometrical concepts that have no thermodynamic meaning. 
 
 The representations of OPB:Information content and OPB:Statistical properties are deferred pending appropriate use-case needs.</discussion>
-        <rdfs:comment>A physics continuant that is a scalar, vector or tensor measure of an aspect of physics continuant using physical means, or that can be derived by computations on such measures.</rdfs:comment>
-        <rdfs:label>Physics property</rdfs:label>
+        <rdfs:comment>A physics continuant that is a scalar, vector or tensor measure of an aspect of physics continuant or procesural using physical means, or that can be derived by computations on such measures.</rdfs:comment>
+        <rdfs:label>Physics quality</rdfs:label>
     </owl:Class>
     
 
@@ -2302,7 +2302,7 @@ IUPAC. (2011). &quot;A concise summary of Quantities, Units and Symbols in Physi
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_00247">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00464"/>
-        <rdfs:comment>Analytical domain in which dynamical entities exchange energy by the dynamical processes in which they participate.</rdfs:comment>
+        <rdfs:comment>Physics domain in which dynamical entities exchange energy by the dynamical processes in which they participate.</rdfs:comment>
         <rdfs:label>Dynamical domain</rdfs:label>
     </owl:Class>
     
@@ -2344,7 +2344,7 @@ In the interim, a bond is an abstraction that represents ONLY the energetics of 
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_00262">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01692"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A trajectory that is a temporally-ordered series of physics events.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A physics trajectory that is a temporally-ordered series of physics events.</rdfs:comment>
         <rdfs:label>Event trajectory</rdfs:label>
     </owl:Class>
     
@@ -2413,7 +2413,7 @@ In the interim, a bond is an abstraction that represents ONLY the energetics of 
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_00278">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00464"/>
-        <rdfs:comment>Physics analytical domain in which the participants have portions of thermodynamical energy.</rdfs:comment>
+        <rdfs:comment>Physics domain in which the participants have portions of thermodynamical energy.</rdfs:comment>
         <rdfs:label>Thermodynamical domain</rdfs:label>
     </owl:Class>
     
@@ -2794,7 +2794,7 @@ An example of the quantitative property dependency is: E1 = nE2, and nF1 = F2, w
                 <owl:onClass rdf:resource="http://bhi.washington.edu/OPB#OPB_01362"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A physical property that is a measure of the occurrence of events within a temporal coordinate system.</rdfs:comment>
+        <rdfs:comment>A physics quality that is a measure of the occurrence of events within a temporal coordinate system.</rdfs:comment>
         <rdfs:label>Temporal property</rdfs:label>
     </owl:Class>
     
@@ -3082,7 +3082,7 @@ IUPAC. (2011). &quot;A concise summary of Quantities, Units and Symbols in Physi
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_00464">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01118"/>
         <discussion>Note that a single physical entity may be modeled and analyzed in more than a single physical domain. For example, a molecule may participate in undergo (1) chemical transformation (chemical kinetic domain), (2) diffusion (diffusion kinetic domain), (3) structural deformation (solid mechanical domain), and, even (4) change of informational entropy (due to reorganization; information domain). Thus domains try to capture what aspects of an entity are of interest and abstraction in a given analysis.</discussion>
-        <rdfs:comment>A physics entity that represents, for purposes of resource annotation, a branch of physics such as fluid kinetics, chemical kinetics, or thermodynamics within which physical continuants, dependencies, and processes share physical properties and forms of thermodynamical energy</rdfs:comment>
+        <rdfs:comment>A physics continuant that represents, for purposes of resource annotation, a branch of physics such as fluid kinetics, chemical kinetics, or thermodynamics within which physical continuants, dependencies, and processes share physical properties and forms of thermodynamical energy</rdfs:comment>
         <rdfs:label>Physics domain</rdfs:label>
     </owl:Class>
     
@@ -3190,7 +3190,7 @@ IUPAC. (2011). &quot;A concise summary of Quantities, Units and Symbols in Physi
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_00510">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01397"/>
         <OPB_01611>Temporal Region</OPB_01611>
-        <rdfs:comment>A physics processural entity that is an instant or span of time.</rdfs:comment>
+        <rdfs:comment>A physics processural that is an instant or span of time.</rdfs:comment>
         <rdfs:label>Temporal region</rdfs:label>
     </owl:Class>
     
@@ -3221,7 +3221,7 @@ IUPAC. (2011). &quot;A concise summary of Quantities, Units and Symbols in Physi
 
 &quot;Dynamical&quot; is used as an adjective applied to continuant entities, processes, attributes, etc. that possess thermodynamic energy whereas &quot;thermodynamical&quot; is applied to portions, fluxes, etc. of energy (a primitive) that inher in continuants and are exchanged during dynamical processes.</discussion>
         <rdfs:comment>A physics continuant that is portion of thermodynamic energy or entropy.</rdfs:comment>
-        <rdfs:label>Thermodynamical entity</rdfs:label>
+        <rdfs:label>Thermodynamic entity</rdfs:label>
     </owl:Class>
     
 
@@ -3288,7 +3288,7 @@ To emphasize intent of the OPB as an ontology of analytical concepts, we have pu
 The OPB does not extend to include quantum or relativistic physics, nor is it intended to recapitulate the axiomatic basis of physics as a theoretical framework. Rather, OPB is focuses on foundational theory of classical physics particularly as applied in system dynamics. For example, it encompasses discrete systems analysis (using ordinary differential equations; ODEs), continuum systems analysis (using partial differential equations; PDEs), discrete &quot;agent-based&quot; modeling, and causal propagation models.
 
  the first version of the OPB is targeted solely to discrete systems analysis.</discussion>
-        <rdfs:comment>A Thing that is an entity, definition, or law of classical physics as discovered and as may be articulated in speech, mathematics, or computational procedures.</rdfs:comment>
+        <rdfs:comment>A quality, definition, abstraction, or law of classical physics as discovered and applied to the explanation, analysis, and simulation of biophysical entities and processes.</rdfs:comment>
         <rdfs:label>Physics entity</rdfs:label>
     </owl:Class>
     
@@ -3506,7 +3506,7 @@ The OPB does not extend to include quantum or relativistic physics, nor is it in
 2. Karnopp, D., D.L. Margolis, and R.C. Rosenberg, System dynamics: a unified approach. 2nd ed. A Wiley-Interscience Publication1990, New York: Wiley.
 
 </discussion>
-        <rdfs:comment>A physics property that is an attribute of a dynamical entity, a dynamical process or a constitutive dynamical dependency whose value determines the amount or rate of change of thermodynamic energy inhering in the entity or the rate of energy transfer during a dynamical process.</rdfs:comment>
+        <rdfs:comment>A physics quality that is an attribute of a dynamical entity, a dynamical process or a constitutive dynamical dependency whose value determines the amount or rate of change of thermodynamic energy inhering in the entity or the rate of energy transfer during a dynamical process.</rdfs:comment>
         <rdfs:label>Dynamical property</rdfs:label>
     </owl:Class>
     
@@ -4654,7 +4654,7 @@ https://en.wikipedia.org/wiki/Osmotic_pressure </discussion>
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01100">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00147"/>
-        <rdfs:comment>Physics property that is the value, dimension, measurement unit, or the mathematical form of a physics property.</rdfs:comment>
+        <rdfs:comment>Physics quality that is the value, dimension, measurement unit, or the mathematical form of a physics property.</rdfs:comment>
         <rdfs:label>Property attribute</rdfs:label>
     </owl:Class>
     
@@ -4863,8 +4863,8 @@ Gravitational mass is measured by comparing the force of gravity of an unknown m
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01118">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00528"/>
-        <discussion>Physics continuants are portions of primitive physics entites that may be spatially-bounded (e.g, a heart, a portion of blood, a cell&apos;s cytoplasmic  sodium ions) or may be spatially-unbounded (e.g., an electrical field or gravitational potential field).</discussion>
-        <rdfs:comment>A physics entity that represents a continuant that may, or may not, exist in the real world.</rdfs:comment>
+        <discussion>Physics continuants represent real entities that are portions of primitive physics entites and may be spatially-bounded (e.g, a heart, a portion of blood, a cell&apos;s cytoplasmic  sodium ions) or may be spatially-unbounded (e.g., an electrical field or gravitational potential field).</discussion>
+        <rdfs:comment>A physics entity that is a continuant in the real world or is an abstract representation thereof.</rdfs:comment>
         <rdfs:label>Physics continuant</rdfs:label>
     </owl:Class>
     
@@ -4899,7 +4899,7 @@ Gravitational mass is measured by comparing the force of gravity of an unknown m
 As such it closely related to class term &quot;phenotype&quot; as defined in biomedical phenotype ontologies (e.g., PATO: Phenotype And Trait Ontology, HPO: Human Phenotype Ontology). However, &apos;state&apos; in OPB excludes psychological, genomic, evolutionary and other biological attributes except as measureable and quantifiable in terms of physical measures.. Thus, for the biomedical domain, OPB uses &quot;Physical state&quot; to comprehend the concepts of &quot;state&quot; and &quot;fluent&quot; as follows: 
 
 &quot;Physical state&quot; should also be synonymous with the concept of &quot;fluent&quot; (as in the situation calculus, the Process Specification Language, and OBO:Process Ontology) which is a changeable aspect of a system.</discussion>
-        <rdfs:comment>A physics state of a physics continuant that is composed of its dyanmical state, its structural state, and its thermodynamical state.</rdfs:comment>
+        <rdfs:comment>A physical state of a physics continuant that is composed of its dyanmical state, its structural state, and its thermodynamical state.</rdfs:comment>
         <rdfs:label>Process state</rdfs:label>
     </owl:Class>
     
@@ -5158,6 +5158,7 @@ As such it closely related to class term &quot;phenotype&quot; as defined in bio
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01147">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01690"/>
+        <rdfs:comment>A process occurrence event that is</rdfs:comment>
         <rdfs:label xml:lang="en">End process event</rdfs:label>
     </owl:Class>
     
@@ -5195,12 +5196,12 @@ As such it closely related to class term &quot;phenotype&quot; as defined in bio
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01151">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01391"/>
-        <rdfs:comment>A physics dependency that represents a theory, hypothesis, or explanation that describes the physical interactions, property values, and temporal changes amongst a set of physics continuants and the physics processes in which they participate. 
+        <rdfs:comment>A physics dependency that is a mathematical representation of a theory, hypothesis, or explanation that describes the physical interactions, property values, and temporal changes amongst a set of physics continuants and the physics processes in which they participate. 
 
-A physics model when expressed verbally, graphically, or computationally may be reprentable as a subclass in the OBO Information Artefact Ontology (IAO).
+A physics model may be when expressed verbally, graphically, or computationally may be reprentable as a subclass in the OBO Information Artefact Ontology (IAO).
 
 Instances of Physics Model class are intended to be used to annotate or describe the mathematical representations of parts or entirety of computational representations of physics continuants, dependencies, and processurals, in part or as a whole.</rdfs:comment>
-        <rdfs:label xml:lang="en">Physics model</rdfs:label>
+        <rdfs:label xml:lang="en">Physics math model</rdfs:label>
     </owl:Class>
     
 
@@ -6199,7 +6200,7 @@ Instances of Physics Model class are intended to be used to annotate or describe
                 <owl:onClass rdf:resource="http://bhi.washington.edu/OPB#OPB_01426"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A physical property that is a scalar or vectorial measure of the spatial extent, location, or shape of a spatial entity.</rdfs:comment>
+        <rdfs:comment>A physics quality that is a scalar or vectorial measure of the spatial extent, location, or shape of a spatial entity.</rdfs:comment>
         <rdfs:label xml:lang="en">Spatial property</rdfs:label>
     </owl:Class>
     
@@ -7734,7 +7735,7 @@ The International System of Quantities (ISQ) is a system based on seven base qua
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01384">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00464"/>
-        <rdfs:comment>Physics analytical domain that encompasses theoretical entities that do not occupy space are not composed of material and/or energy.</rdfs:comment>
+        <rdfs:comment>Physics domain that encompasses theoretical entities that do not occupy space are not composed of material and/or energy.</rdfs:comment>
         <rdfs:label xml:lang="en">Abstract domain</rdfs:label>
     </owl:Class>
     
@@ -7755,7 +7756,7 @@ The International System of Quantities (ISQ) is a system based on seven base qua
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01386">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01692"/>
-        <rdfs:comment>A physical state change that is a time-series of changes of physical asttributes of a participant in a physical process.</rdfs:comment>
+        <rdfs:comment>A physics trajectory that is a time-series of changes of physical asttributes of a participant in a physical process.</rdfs:comment>
         <rdfs:label xml:lang="en">State trajectory</rdfs:label>
     </owl:Class>
     
@@ -7806,10 +7807,11 @@ The International System of Quantities (ISQ) is a system based on seven base qua
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01391">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00528"/>
-        <discussion>Physical dependencies are represented as an axioms, definitions and empirical laws of physics for the observation, understanding, and analysis of real biophysical systems. They are represented by a broad class of quantitative and qualitative relationships amongst physical entities and the attributes of physical entities, physical continuants, and physical processes. These are the rules by which dynamical and information systems operate and are routinely encoded for analysis and simulation in a variety of computational and mathematical systems.
+        <discussion>Physical dependencies are axioms, definitions and empirical laws of physics that, once discovered, may be articulated verbally, mathematically, or computationally as aids to understanding and analyzing real biophysical systems. 
 
-Examples include: Ohm&apos;s law for electricity and for fluid flow, the definition of kinetic energy in terms of mass and velocity,  
-</discussion>
+Physical dependencies may be represented by a broad class of quantitative and qualitative relationships amongst physical entities and the qualitities of physics continuants, and processes. Dependencies are the rules by which dynamical and information systems operate, and comprise computations for analysis and simulation in a variety of computational and mathematical systems.
+
+Examples include: Ohm&apos;s law for electricity and for fluid flow, the definition of kinetic energy in terms of mass and velocity,</discussion>
         <rdfs:comment>A physics entity that relates the existence and attributes of physics continuants to the occurrences and time-courses of physics processural entities.</rdfs:comment>
         <rdfs:label xml:lang="en">Physics dependency</rdfs:label>
     </owl:Class>
@@ -8291,7 +8293,7 @@ For example, a computation may calculate the radius of a spherical entity accord
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01426">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00464"/>
         <discussion>Spatial domain classes are represented primarily for annotation purposes to distinguish, for example, models of glucose as an atomic structure vs. as player is cell metabolism or as a component of whole-body glucose uptake.</discussion>
-        <rdfs:comment>Physics analytical domain in which the entities are spatial entities</rdfs:comment>
+        <rdfs:comment>Physics domain in which the entities are spatial entities</rdfs:comment>
         <rdfs:label xml:lang="en">Spatial domain</rdfs:label>
     </owl:Class>
     
@@ -9087,7 +9089,7 @@ For example, a computation may calculate the radius of a spherical entity accord
                 <owl:someValuesFrom rdf:resource="http://bhi.washington.edu/OPB#OPB_01113"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Primitive physical entity that is matter.</rdfs:comment>
+        <rdfs:comment>Primitive physical entity that is composed of atoms.</rdfs:comment>
         <rdfs:label xml:lang="en">Matter</rdfs:label>
     </owl:Class>
     
@@ -9259,9 +9261,9 @@ Important to realize that MM params, HH params, etc. are all derived and asserte
     <!-- http://bhi.washington.edu/OPB#OPB_01508 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01508">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00147"/>
+        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01535"/>
         <discussion>Dynamical surrounds are analytical artefacts, as typically found in thermodynamic analysis, to represent the so-called &quot;boundary conditions&quot; by which a dynamical entity interacts with other dynamical entities. Entities of the surround remain otherwise unspecified and are represented only by the imposition of boundary state property values (e.g., a pressure or temperature) or boundary flow rates (e.g., time-dependent, or -independent flows of material or energy) that drive changes of dynamical state of the surrounded dynamical entity.</discussion>
-        <rdfs:comment>A physics property that is a set of dynamical state and rate properties that hold at a dynamical boundary</rdfs:comment>
+        <rdfs:comment>A physical state that is a set of dynamical state and rate properties that hold at a dynamical boundary</rdfs:comment>
         <rdfs:label xml:lang="en">Boundary-condition</rdfs:label>
     </owl:Class>
     
@@ -9610,7 +9612,7 @@ Kinetic boundaries disinguish, say, a portion of glucose and a portion of G6P th
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01535">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00147"/>
-        <rdfs:comment>A physics properrty composed of the set of dynamical, structural, and thermodynamical properties of a physical continuant at a moment in  time.</rdfs:comment>
+        <rdfs:comment>A physics quality composed of the set of dynamical, structural, and thermodynamical properties of a physical continuant at a moment in  time.</rdfs:comment>
         <rdfs:label xml:lang="en">Physical state</rdfs:label>
     </owl:Class>
     
@@ -10791,7 +10793,7 @@ http://www.unitsofmeasurement.org/apidocs/index.html
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01621">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00147"/>
-        <rdfs:comment>A physical property that is a constitutive scalar that defines the ratio of a dynamical property to a property of a different type.</rdfs:comment>
+        <rdfs:comment>A physical quality that is a constitutive scalar that defines the ratio of a dynamical property to a property of a different type.</rdfs:comment>
         <rdfs:label xml:lang="en">Physical constant</rdfs:label>
     </owl:Class>
     
@@ -11444,7 +11446,7 @@ despite copy/pasting  &apos;Temperature&apos;  from its class definition box.
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01690">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01691"/>
-        <rdfs:comment>An participant state event whose occurrence is sufficient to initiate or terminate an occurrence of a process whose .</rdfs:comment>
+        <rdfs:comment>A physics event whose occurrence is sufficient to initiate or terminate an occurrence of a process</rdfs:comment>
         <rdfs:label xml:lang="en">Process occurrence event</rdfs:label>
     </owl:Class>
     
@@ -11471,7 +11473,7 @@ despite copy/pasting  &apos;Temperature&apos;  from its class definition box.
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01692">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01359"/>
-        <rdfs:comment>A physical change that is the time-course of changes, either discrete or continous, in a physics process or in the physical state of a process participant.</rdfs:comment>
+        <rdfs:comment>A physics change that is the time-course of changes, either discrete or continuous, in a physics process or in the physical state of a process participant.</rdfs:comment>
         <rdfs:label xml:lang="en">Physics trajectory</rdfs:label>
     </owl:Class>
     
