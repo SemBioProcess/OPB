@@ -3275,7 +3275,7 @@ IUPAC. (2011). &quot;A concise summary of Quantities, Units and Symbols in Physi
     <!-- http://bhi.washington.edu/OPB#OPB_00528 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_00528">
-        <discussion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The OPB is an ontology of the abstractions created by the science of classical physics for the descrition and analyisis of single, discrete physical entities such as an apple or rope, or for systems of interacting entities. It includes branches of engineering system dynamics and classical thermodynamics.  
+        <discussion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The OPB is an ontology of the real entities and their abstractions modeled using the science of classical physics for the description and analyisis of physical entities such as an apple or rope, or for systems of interacting entities. It includes branches of engineering system dynamics and classical thermodynamics.  
 
 OPB has been formulated to support the development, annotation, description and sharing of analytical models. Although developed in the domain of biology, biophysics and physiology, its underlying assumptions, form and content is applicable for the analysis of non-biological engineering systems.
 
@@ -4663,7 +4663,7 @@ https://en.wikipedia.org/wiki/Osmotic_pressure </discussion>
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01100">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01151"/>
-        <rdfs:comment>Physics model entity that is the value, dimension, measurement unit, or the mathematical form of a physics quality.</rdfs:comment>
+        <rdfs:comment>Physics model entity that is the value, dimension, measurement unit, or the mathematical form of a physics quality as observed in the real world or hypothesized as a part of a physics model.</rdfs:comment>
         <rdfs:label>Physics property attribute</rdfs:label>
     </owl:Class>
     
@@ -4873,7 +4873,7 @@ Gravitational mass is measured by comparing the force of gravity of an unknown m
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01118">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00528"/>
         <discussion>Physics continuants represent real entities that are portions of primitive physics entites and may be spatially-bounded (e.g, a heart, a portion of blood, a cell&apos;s cytoplasmic  sodium ions) or may be spatially-unbounded (e.g., an electrical field or gravitational potential field).</discussion>
-        <rdfs:comment>A physics entity that is a continuant in the real world or is an abstract representation thereof.</rdfs:comment>
+        <rdfs:comment>A physics entity that is a continuant in the real world.</rdfs:comment>
         <rdfs:label>Physics continuant</rdfs:label>
     </owl:Class>
     
@@ -5205,7 +5205,9 @@ As such it closely related to class term &quot;phenotype&quot; as defined in bio
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01151">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00528"/>
-        <rdfs:comment>A physics entity that is a theory, hypothesis, or explanation that describes the physical interactions, property values, and temporal changes amongst a set of physics continuants and the physics processes in which they participate. 
+        <rdfs:comment>A physics entity that represents a theory, hypothesis, explanation relating instances of physics continuants to the physics processural within which they exist or participate. 
+
+A physics model aims to describe the physical interactions, dependencies amongst property values, and temporal changes amongst a set of physics continuants and the physics processes in which they participate. 
 
 A physics model may exist solely as an idea or it can be expressed verbally, graphically, or computationally so be representable by a class of the OBO Information Artefact Ontology (IAO).
 
@@ -7887,7 +7889,7 @@ For example, a computation may calculate the radius of a spherical entity accord
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01397">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00528"/>
-        <rdfs:comment>A physics entity that is a physics process or a temporal entity</rdfs:comment>
+        <rdfs:comment>A physics entity that is a physics process or a temporal region</rdfs:comment>
         <rdfs:label xml:lang="en">Physics processural</rdfs:label>
     </owl:Class>
     
