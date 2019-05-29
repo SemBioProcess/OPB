@@ -5145,7 +5145,7 @@ As such it closely related to class term &quot;phenotype&quot; as defined in bio
     <!-- http://bhi.washington.edu/OPB#OPB_01145 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01145">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01367"/>
+        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01397"/>
         <discussion>We defer creating subclasses of Informational processes.</discussion>
         <rdfs:comment>A physics process that is the transmission, transduction or transformation of information amongst process participants with negligible exchange of thermodynamic energy.</rdfs:comment>
         <rdfs:label xml:lang="en">Informational process</rdfs:label>
@@ -7589,16 +7589,6 @@ The International System of Quantities (ISQ) is a system based on seven base qua
         <discussion>Wikipedia: Liquid junction potential http://en.wikipedia.org/w/index.php?title=Liquid_junction_potential&amp;redirect=no</discussion>
         <rdfs:comment>An electrodiffusional potential across a diffusional barrier due to differences in diffusional mobility of anions and cations in the fluids separated by the barrier.</rdfs:comment>
         <rdfs:label xml:lang="en">Liquid junction potential</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://bhi.washington.edu/OPB#OPB_01367 -->
-
-    <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01367">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01397"/>
-        <rdfs:comment>A physics processural that is a flow of energy or information amongst process participants.</rdfs:comment>
-        <rdfs:label>Physics process</rdfs:label>
     </owl:Class>
     
 
@@ -11210,7 +11200,7 @@ More complete OPB support for cotransport will await the needs of suitable use-c
     <!-- http://bhi.washington.edu/OPB#OPB_01660 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01660">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01367"/>
+        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01397"/>
         <rdfs:comment>A physics process entity that is the flow or exchange of matter and/or energy amongst dynamical entities that are partcipants in the process.</rdfs:comment>
         <rdfs:label xml:lang="en">Dynamical process</rdfs:label>
     </owl:Class>
