@@ -4653,9 +4653,9 @@ https://en.wikipedia.org/wiki/Osmotic_pressure </discussion>
     <!-- http://bhi.washington.edu/OPB#OPB_01100 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01100">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00147"/>
-        <rdfs:comment>Physics quality that is the value, dimension, measurement unit, or the mathematical form of a physics property.</rdfs:comment>
-        <rdfs:label>Property attribute</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01151"/>
+        <rdfs:comment>Physics model entity that is the value, dimension, measurement unit, or the mathematical form of a physics quality.</rdfs:comment>
+        <rdfs:label>Physics property attribute</rdfs:label>
     </owl:Class>
     
 
@@ -6248,7 +6248,7 @@ Instances of Physics Model class are intended for annotating parts or the entire
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01248">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01151"/>
-        <rdfs:comment>A physics model expressed in terms of lpgical symbols and operators.</rdfs:comment>
+        <rdfs:comment>A physics model expressed in terms of logical symbols and operators.</rdfs:comment>
         <rdfs:label xml:lang="en">Physics logical model</rdfs:label>
     </owl:Class>
     
