@@ -1020,7 +1020,7 @@ The distinction between &quot;through&quot; and &quot;cross&quot; properties (va
                 <owl:someValuesFrom rdf:resource="http://bhi.washington.edu/OPB#OPB_01350"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A themodynamic entity that is a portion of energy inhering in a dynamical entity</rdfs:comment>
+        <rdfs:comment>A themodynamic entity that is potential for the entity to do work</rdfs:comment>
         <rdfs:label>Portion of energy</rdfs:label>
     </owl:Class>
     
@@ -5198,9 +5198,9 @@ As such it closely related to class term &quot;phenotype&quot; as defined in bio
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00528"/>
         <rdfs:comment>A physics entity that representation of a theory, hypothesis, or explanation that describes the physical interactions, property values, and temporal changes amongst a set of physics continuants and the physics processes in which they participate. 
 
-A physics model may be when expressed verbally, graphically, or computationally may be reprentable as a subclass in the OBO Information Artefact Ontology (IAO).
+A physics model may exist solely as an idea or it can be expressed verbally, graphically, or computationally so be representable by a class of the OBO Information Artefact Ontology (IAO).
 
-Instances of Physics Model class are intended as annotation to describe the mathematical representations of parts or entirety of computational representations of physics continuants, dependencies, and processurals, in part, or as a whole.</rdfs:comment>
+Instances of Physics Model class are intended for annotating parts or the entirety of computational representations of physics continuants, dependencies, and processurals, in part, or as a whole.</rdfs:comment>
         <rdfs:label xml:lang="en">Physics model</rdfs:label>
     </owl:Class>
     
