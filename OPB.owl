@@ -84,7 +84,7 @@ SI-unit classes map, non-exclusively to classes of OPB:PropertyDimension either 
     <!-- http://bhi.washington.edu/OPB#OPB_01611 -->
 
     <owl:AnnotationProperty rdf:about="http://bhi.washington.edu/OPB#OPB_01611">
-        <rdfs:label xml:lang="en">subclass_of_BFOclass</rdfs:label>
+        <rdfs:label xml:lang="en">maps_to_BFOclass</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -1108,6 +1108,7 @@ The distinction between &quot;through&quot; and &quot;cross&quot; properties (va
                 <owl:someValuesFrom rdf:resource="http://bhi.washington.edu/OPB#OPB_00473"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Heat is the portion of energy that can flow from one material continuant to another due to a difference in their temperatures, or by any means other than through work or the transfer of matter</rdfs:comment>
         <rdfs:label>Heat potential energy</rdfs:label>
     </owl:Class>
     
@@ -1773,7 +1774,7 @@ IUPAC. (2011). &quot;A concise summary of Quantities, Units and Symbols in Physi
 
 The representations of OPB:Information content and OPB:Statistical properties are deferred pending appropriate use-case needs.</discussion>
         <rdfs:comment>A physics continuant that is a scalar, vector or tensor measure of an aspect of physics continuant or procesural using physical means, or that can be derived by computations on such measures.</rdfs:comment>
-        <rdfs:label>Physics quality</rdfs:label>
+        <rdfs:label>Physics property</rdfs:label>
     </owl:Class>
     
 
@@ -2361,13 +2362,6 @@ In the interim, a bond is an abstraction that represents ONLY the energetics of 
                 <owl:onClass rdf:resource="http://bhi.washington.edu/OPB#OPB_00013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bhi.washington.edu/OPB#OPB_01261"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://bhi.washington.edu/OPB#OPB_01187"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <discussion>Per BFO2.0: A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. </discussion>
         <rdfs:comment>A dynamical entity that is composed of elements.</rdfs:comment>
         <rdfs:label>Material dynamical entity</rdfs:label>
@@ -2422,7 +2416,7 @@ In the interim, a bond is an abstraction that represents ONLY the energetics of 
     <!-- http://bhi.washington.edu/OPB#OPB_00281 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_00281">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01083"/>
+        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00518"/>
         <rdfs:comment>An immaterial dynamical entity that is spatial distribution of potential energy due to the separation of material, charge, or magnetic monopoles</rdfs:comment>
         <rdfs:label>Potential energy field</rdfs:label>
     </owl:Class>
@@ -3210,7 +3204,7 @@ IUPAC. (2011). &quot;A concise summary of Quantities, Units and Symbols in Physi
     <!-- http://bhi.washington.edu/OPB#OPB_00518 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_00518">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01118"/>
+        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01033"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://bhi.washington.edu/OPB#OPB_00320"/>
@@ -3944,7 +3938,7 @@ Thus, in a simulation model, a femur is annotated as both and independently, an 
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01028">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01151"/>
-        <rdfs:label xml:lang="en">Physics model component</rdfs:label>
+        <rdfs:label xml:lang="en">Physics analytical model</rdfs:label>
     </owl:Class>
     
 
@@ -4453,15 +4447,6 @@ https://en.wikipedia.org/wiki/Osmotic_pressure </discussion>
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01019"/>
         <rdfs:comment>Existential event that is the disappearance of a physical entity as a classifiable type.</rdfs:comment>
         <rdfs:label>Entity disappearance event</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://bhi.washington.edu/OPB#OPB_01083 -->
-
-    <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01083">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01033"/>
-        <rdfs:label xml:lang="en">Portion of thermodynamic energy</rdfs:label>
     </owl:Class>
     
 
@@ -4990,15 +4975,6 @@ As such it closely related to class term &quot;phenotype&quot; as defined in bio
     
 
 
-    <!-- http://bhi.washington.edu/OPB#OPB_01130 -->
-
-    <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01130">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01083"/>
-        <rdfs:label xml:lang="en">Portion of heat energy</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://bhi.washington.edu/OPB#OPB_01131 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01131">
@@ -5074,15 +5050,6 @@ As such it closely related to class term &quot;phenotype&quot; as defined in bio
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01137">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01142"/>
         <rdfs:label xml:lang="en">Standard deviation value</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://bhi.washington.edu/OPB#OPB_01138 -->
-
-    <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01138">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01083"/>
-        <rdfs:label xml:lang="en">Portion of kinetic energy</rdfs:label>
     </owl:Class>
     
 
@@ -5212,7 +5179,7 @@ A physics model aims to describe the physical interactions, dependencies amongst
 A physics model may exist solely as an idea or it can be expressed verbally, graphically, or computationally so be representable by a class of the OBO Information Artefact Ontology (IAO).
 
 Instances of Physics Model class are intended for annotating parts or the entirety of computational representations of physics continuants, dependencies, and processurals, in part, or as a whole.</rdfs:comment>
-        <rdfs:label xml:lang="en">Physics model</rdfs:label>
+        <rdfs:label xml:lang="en">Physics analytical entity</rdfs:label>
     </owl:Class>
     
 
@@ -5560,16 +5527,6 @@ Instances of Physics Model class are intended for annotating parts or the entire
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01719"/>
         <rdfs:comment>A transformer process whose rates are determined by a mechanical transformer dependency.</rdfs:comment>
         <rdfs:label xml:lang="en">Mechanical transformer process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://bhi.washington.edu/OPB#OPB_01187 -->
-
-    <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01187">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00021"/>
-        <rdfs:comment>Heat is the portion of energy that can flow from one material continuant to another due to a difference in their temperatures, or by any means other than through work or the transfer of matter</rdfs:comment>
-        <rdfs:label xml:lang="en">Portion of heat energy</rdfs:label>
     </owl:Class>
     
 
@@ -6361,15 +6318,6 @@ Instances of Physics Model class are intended for annotating parts or the entire
     
 
 
-    <!-- http://bhi.washington.edu/OPB#OPB_01259 -->
-
-    <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01259">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01083"/>
-        <rdfs:label xml:lang="en">Portion of potential energy</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://bhi.washington.edu/OPB#OPB_01260 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01260">
@@ -6619,15 +6567,6 @@ http://www.physiologyweb.com/lecture_notes/resting_membrane_potential/resting_me
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01028"/>
         <rdfs:comment>A Physics Model that includes a mathematical equation at least one term that is a mathematical derivative of the value of a physical property such as time, space, or others.</rdfs:comment>
         <rdfs:label xml:lang="en">Physics differential model</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://bhi.washington.edu/OPB#OPB_01286 -->
-
-    <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01286">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01138"/>
-        <rdfs:label xml:lang="en">Portion of fluid kinetic energy</rdfs:label>
     </owl:Class>
     
 
@@ -7179,15 +7118,6 @@ formalized as SC:successor state axiom</discussion>
     
 
 
-    <!-- http://bhi.washington.edu/OPB#OPB_01337 -->
-
-    <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01337">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01138"/>
-        <rdfs:label xml:lang="en">Portion of solid kinetic energy</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://bhi.washington.edu/OPB#OPB_01338 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01338">
@@ -7651,15 +7581,6 @@ The International System of Quantities (ISQ) is a system based on seven base qua
     
 
 
-    <!-- http://bhi.washington.edu/OPB#OPB_01375 -->
-
-    <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01375">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01259"/>
-        <rdfs:label xml:lang="en">Portion of chemical potential energy</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://bhi.washington.edu/OPB#OPB_01376 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01376">
@@ -7706,24 +7627,6 @@ The International System of Quantities (ISQ) is a system based on seven base qua
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01064"/>
         <rdfs:comment>A spatial span that is characteristic length of the distribution of mobile electrical charges in a fluid electrolyte near an electrically-charge boundary. </rdfs:comment>
         <rdfs:label xml:lang="en">Debye length</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://bhi.washington.edu/OPB#OPB_01381 -->
-
-    <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01381">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01259"/>
-        <rdfs:label xml:lang="en">Portion of fluid potential energy</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://bhi.washington.edu/OPB#OPB_01382 -->
-
-    <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01382">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01259"/>
-        <rdfs:label xml:lang="en">Portion of sollid potential energy</rdfs:label>
     </owl:Class>
     
 
@@ -7804,7 +7707,7 @@ The International System of Quantities (ISQ) is a system based on seven base qua
     <!-- http://bhi.washington.edu/OPB#OPB_01390 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01390">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01083"/>
+        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00021"/>
         <rdfs:label xml:lang="en">Portion of Lagrangian energy</rdfs:label>
     </owl:Class>
     
