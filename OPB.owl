@@ -1768,7 +1768,7 @@ IUPAC. (2011). &quot;A concise summary of Quantities, Units and Symbols in Physi
     <!-- http://bhi.washington.edu/OPB#OPB_00147 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_00147">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01118"/>
+        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01029"/>
         <OPB_00097>http://goldbook.iupac.org/list_goldbook_quantities_defs_A.html</OPB_00097>
         <discussion>Physical properties classes are categorized according to the analytical domain in which they have meaning. For example, OPB:Dynamical properties apply to the domain of dynamical systems for which the concepts of thermodynamics have meaning, whereas OPB:Spatial properties apply to spatial and geometrical concepts that have no thermodynamic meaning. 
 
@@ -2303,7 +2303,7 @@ IUPAC. (2011). &quot;A concise summary of Quantities, Units and Symbols in Physi
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_00247">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00464"/>
-        <rdfs:comment>Physics domain in which dynamical entities exchange energy by the dynamical processes in which they participate.</rdfs:comment>
+        <rdfs:comment>Physics domain in which dynamical entities exchange energy or information by the dynamical processes in which they participate.</rdfs:comment>
         <rdfs:label>Dynamical domain</rdfs:label>
     </owl:Class>
     
@@ -2633,7 +2633,7 @@ IUPAC. (2011). &quot;A concise summary of Quantities, Units and Symbols in Physi
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01100"/>
         <discussion>Property form classes are provided for the annotation and reconciliation of potentially different expression, definition and/or form of a physical property value</discussion>
         <rdfs:comment>A physics property attribute that is the spatial scope, mathematical form or spatial coordinate basis of a property value.</rdfs:comment>
-        <rdfs:label>Property form</rdfs:label>
+        <rdfs:label>Property basis</rdfs:label>
     </owl:Class>
     
 
@@ -2810,7 +2810,7 @@ An example of the quantitative property dependency is: E1 = nE2, and nF1 = F2, w
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00353"/>
         <discussion>--- outsource this class to existing ontology??</discussion>
         <rdfs:comment>A property form that is the mathematical form of a property value</rdfs:comment>
-        <rdfs:label>Property mathematical form</rdfs:label>
+        <rdfs:label>Property mathematical basis</rdfs:label>
     </owl:Class>
     
 
@@ -3076,7 +3076,7 @@ IUPAC. (2011). &quot;A concise summary of Quantities, Units and Symbols in Physi
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_00464">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01151"/>
         <discussion>Note that a single physical entity may be modeled and analyzed in more than a single physical domain. For example, a molecule may participate in undergo (1) chemical transformation (chemical kinetic domain), (2) diffusion (diffusion kinetic domain), (3) structural deformation (solid mechanical domain), and, even (4) change of informational entropy (due to reorganization; information domain). Thus domains try to capture what aspects of an entity are of interest and abstraction in a given analysis.</discussion>
-        <rdfs:comment>A physics continuant that represents, for purposes of resource annotation, a branch of physics such as fluid kinetics, chemical kinetics, or thermodynamics within which physical continuants, dependencies, and processes share physical properties and forms of thermodynamical energy</rdfs:comment>
+        <rdfs:comment>A physics analytical entity that represents a division of analytical investigation or discipline with the the domain of the physical sciences.</rdfs:comment>
         <rdfs:label>Physics domain</rdfs:label>
     </owl:Class>
     
@@ -3087,7 +3087,7 @@ IUPAC. (2011). &quot;A concise summary of Quantities, Units and Symbols in Physi
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_00471">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00353"/>
         <rdfs:comment>A property form that defines the spatial dimensions for which the value of an extensive physical property is defined.</rdfs:comment>
-        <rdfs:label>Property spatial scope</rdfs:label>
+        <rdfs:label>Property spatial basis</rdfs:label>
     </owl:Class>
     
 
@@ -3938,7 +3938,17 @@ Thus, in a simulation model, a femur is annotated as both and independently, an 
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01028">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01151"/>
-        <rdfs:label xml:lang="en">Physics analytical model</rdfs:label>
+        <rdfs:comment>A physics analytical entity that is a set mathematical abstractions that represent one or more physics real entities.</rdfs:comment>
+        <rdfs:label xml:lang="en">Physics model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://bhi.washington.edu/OPB#OPB_01029 -->
+
+    <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01029">
+        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00528"/>
+        <rdfs:label xml:lang="en">Physics real entity</rdfs:label>
     </owl:Class>
     
 
@@ -4074,7 +4084,7 @@ Surface tension, usually represented by the symbol γ, is measured in forces per
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01046">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00353"/>
         <rdfs:comment>A property form that is the spatial and/or temporal coordinate system within which a property value is defined.</rdfs:comment>
-        <rdfs:label>Property coordinate form</rdfs:label>
+        <rdfs:label>Property coordinate basis</rdfs:label>
     </owl:Class>
     
 
@@ -4856,7 +4866,7 @@ Gravitational mass is measured by comparing the force of gravity of an unknown m
     <!-- http://bhi.washington.edu/OPB#OPB_01118 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01118">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00528"/>
+        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01029"/>
         <discussion>Physics continuants represent real entities that are portions of primitive physics entites and may be spatially-bounded (e.g, a heart, a portion of blood, a cell&apos;s cytoplasmic  sodium ions) or may be spatially-unbounded (e.g., an electrical field or gravitational potential field).</discussion>
         <rdfs:comment>A physics entity that is a continuant in the real world.</rdfs:comment>
         <rdfs:label>Physics continuant</rdfs:label>
@@ -7447,7 +7457,7 @@ The International System of Quantities (ISQ) is a system based on seven base qua
     <!-- http://bhi.washington.edu/OPB#OPB_01359 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01359">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01397"/>
+        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01660"/>
         <rdfs:comment>A physics processural that is a change in the physical state of a physics continuant.</rdfs:comment>
         <rdfs:label>Physics change</rdfs:label>
     </owl:Class>
@@ -7716,7 +7726,7 @@ The International System of Quantities (ISQ) is a system based on seven base qua
     <!-- http://bhi.washington.edu/OPB#OPB_01391 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01391">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01151"/>
+        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01029"/>
         <discussion>Physical dependencies are axioms, definitions and empirical laws of physics that, once discovered, may be articulated verbally, mathematically, or computationally as aids to understanding and analyzing real biophysical systems. 
 
 Physical dependencies may be represented by a broad class of quantitative and qualitative relationships amongst physical entities and the qualitities of physics continuants, and processes. Dependencies are the rules by which dynamical and information systems operate, and comprise computations for analysis and simulation in a variety of computational and mathematical systems.
@@ -7781,7 +7791,7 @@ For example, a computation may calculate the radius of a spherical entity accord
     <!-- http://bhi.washington.edu/OPB#OPB_01397 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01397">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00528"/>
+        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01029"/>
         <rdfs:comment>A physics entity that is a physics process or a temporal region</rdfs:comment>
         <rdfs:label xml:lang="en">Physics processural</rdfs:label>
     </owl:Class>
@@ -8405,7 +8415,7 @@ For example, a computation may calculate the radius of a spherical entity accord
     <!-- http://bhi.washington.edu/OPB#OPB_01442 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01442">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01118"/>
+        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01029"/>
         <discussion>Primitive physics entity classes serve as &quot;mass nouns&quot; for the stuff of physical analysis.</discussion>
         <rdfs:comment>A physics continuant that is a portion or instance of a material or immaterial part of reality that is so basic to our understanding that it cannot be defined in a non-circular manner.</rdfs:comment>
         <rdfs:label xml:lang="en">Primitive entity</rdfs:label>
