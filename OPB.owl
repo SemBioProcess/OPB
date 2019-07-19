@@ -3948,7 +3948,7 @@ Thus, in a simulation model, a femur is annotated as both and independently, an 
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01029">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00528"/>
-        <rdfs:comment>A physics entity that is a continuant or process in the real world and that occupies space and time, and is composed of portions of matter, energy, or information.</rdfs:comment>
+        <rdfs:comment>A physics entity that is a continuant or process in the real world, occupies space and time, and possesses a portion of matter, energy, or information.</rdfs:comment>
         <rdfs:label xml:lang="en">Physics real entity</rdfs:label>
     </owl:Class>
     
@@ -6648,15 +6648,6 @@ http://www.physiologyweb.com/lecture_notes/resting_membrane_potential/resting_me
     
 
 
-    <!-- http://bhi.washington.edu/OPB#OPB_01286 -->
-
-    <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01286">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01282"/>
-        <rdfs:label xml:lang="en">Temperature</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://bhi.washington.edu/OPB#OPB_01287 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01287">
@@ -7781,15 +7772,6 @@ The International System of Quantities (ISQ) is a system based on seven base qua
     
 
 
-    <!-- http://bhi.washington.edu/OPB#OPB_01390 -->
-
-    <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01390">
-        <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_00021"/>
-        <rdfs:label xml:lang="en">Portion of Lagrangian energy</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://bhi.washington.edu/OPB#OPB_01391 -->
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01391">
@@ -7859,7 +7841,7 @@ For example, a computation may calculate the radius of a spherical entity accord
 
     <owl:Class rdf:about="http://bhi.washington.edu/OPB#OPB_01397">
         <rdfs:subClassOf rdf:resource="http://bhi.washington.edu/OPB#OPB_01029"/>
-        <rdfs:comment>A physics entity that is a temporal region, a phyysics dependency, or</rdfs:comment>
+        <rdfs:comment>A physics entity that is a temporal region, a physics dependency, or a physics change or process</rdfs:comment>
         <rdfs:label xml:lang="en">Physics occurrent</rdfs:label>
     </owl:Class>
     
