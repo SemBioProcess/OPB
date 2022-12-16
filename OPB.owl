@@ -10056,7 +10056,7 @@ In a biological membrane, the reversal potential (also known as the Nernst poten
 
 All resistive dependencies relate a force (or force differential) to a flow-rate property which is a generalization on Ohm&apos;s law discovered by Georg Ohm in the mid-1820&apos;s using recently discovered galvanometers. Ohm&apos;s law refers strictly to cases where the force-flow relation is, at least approximately, linear. Non-linear dependencies abound both in the fields of engineering (e.g., electrical diodes) and biology (e.g., turbulent fluid flow, membrane channel mediated ion flow)</OPB_01768>
         <rdfs:comment>A constitutive flow dependency by which a flow rate of a process depends on the gradient of forces the participating entities.</rdfs:comment>
-        <rdfs:label xml:lang="en">Force-driven flow dependency</rdfs:label>
+        <rdfs:label xml:lang="en">Resistive flow dependency</rdfs:label>
     </owl:Class>
     
 
